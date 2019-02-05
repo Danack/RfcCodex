@@ -1,25 +1,20 @@
 # RfcCodex
 
 
-Notes on PHP RFCs, why some were declined, what others need to be implemented.
+There are some notes on PHP RFCs, why some were declined, and what others might need for them to be implemented.
 
+The purpose of these documents is to avoid information from being last, or needing to be repeated multiple times on PHP internals.
 
-## Good idea that 
-
+## Things still be discussed 
 
 [Consistent callables](https://github.com/Danack/RfcCodex/blob/master/consistent_callables.md)
-
-
-## Good ideas that have problems
-
-[Co- and contra-variance](https://github.com/Danack/RfcCodex/blob/master/co_and_contra_variance.md)
-
-
-## Other ideas
 
 [Method overloading](https://github.com/Danack/RfcCodex/blob/master/method_overloading.md)
 
 
+# Ideas that overcame their challenges
+
+[Co- and contra-variance](https://github.com/Danack/RfcCodex/blob/master/co_and_contra_variance.md)
 
 
 ## Disclaimer
