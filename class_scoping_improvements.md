@@ -1,4 +1,4 @@
-# Generics
+# Class scoping improvements
 
 TODO - write this.
 

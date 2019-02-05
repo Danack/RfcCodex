@@ -1,6 +1,7 @@
-# Class scope improvements
+# Briefer closure syntax 
 
-e.g. package private / friend classes.
+TODO - write this
+
 
 ## General idea
 
@@ -14,11 +15,16 @@ e.g. package private / friend classes.
 
 ## Forecast
 
-Not likely to ever happen.
+Reasonably likely to happen when someone  
 
 ## Notes
 
 
+https://wiki.php.net/rfc/arrow_functions
 
-https://wiki.php.net/rfc/friend-classes
+https://wiki.php.net/rfc/short-closures
+
+
+
+
 
