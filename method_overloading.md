@@ -101,7 +101,7 @@ Not likely to ever happen.
 
 Method overloading is trivially implementable in userland.
 
-
+```
 /**
  * @method sum(int $a, int $b): int;
  * @method sum(float $b, float $b): float;
@@ -132,3 +132,5 @@ is_float($arguments[1])) {
         return $a + $b;
     }
 }
+
+```
