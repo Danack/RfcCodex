@@ -2,7 +2,7 @@
 
 There are some notes on PHP RFCs, why some were declined, and what others might need for them to be implemented.
 
-The purpose of these documents is to avoid information from being last, or needing to be repeated multiple times on PHP internals.
+The purpose of these documents is to avoid information from being lost and to try to avoid conversations needing to be repeated multiple times on PHP internals.
 
 ## Things still be discussed 
 
@@ -23,7 +23,6 @@ The purpose of these documents is to avoid information from being last, or needi
 # Ideas that overcame their challenges
 
 [Co- and contra-variance](https://github.com/Danack/RfcCodex/blob/master/co_and_contra_variance.md)
-
 
 
 ## Contributing
