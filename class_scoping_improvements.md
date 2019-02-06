@@ -5,7 +5,9 @@
 There are times when a class needs to expose a public method to other classes, but it is not intended for this method to be called by any arbitrary code; it should only be called by 'collaborating' classes within the same package as that class.
 
 
-For example, everything inside the [Doctrine\ORM\Internal\*](https://github.com/doctrine/orm/tree/master/lib/Doctrine/ORM/Internal) namespace are things that people shouldn't touch. However the public methods
+For example, everything inside the [Doctrine\ORM\Internal\*](https://github.com/doctrine/orm/tree/master/lib/Doctrine/ORM/Internal) namespace are things that people shouldn't touch. However the public methods need to be public so that they are accessible to the other Doctrine classes.
+
+Currently there is no way to enforce that some methods should be available to some classes, but not all other classes.
 
 
 ## Hurdles to overcome
