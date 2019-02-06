@@ -22,11 +22,12 @@ class Foo {
     }
 }
 
-```
-
 $foo = new Foo();
 $foo->sum(1, 2); // echos 'int version was called' 
 $foo->sum(1.1, 2.2); // echos 'float version was called'
+
+```
+
 
 
 ## Hurdles to overcome
@@ -36,9 +37,7 @@ $foo->sum(1.1, 2.2); // echos 'float version was called'
 
 The main problem is that unlike other more statically typed languages, PHP does a lot of type-juggling at run-time. This means that the exact behaviour is hard to define. For example:
 
-
 Which function would `$foo->sum(17.4, 42)` call? 
-
 
 Other languages that have method overloading (e.g. Java) tend not to have type-juggling so they avoid quite a few problems with dynamic types.
 
@@ -52,7 +51,6 @@ Any RFC would need to address all of the different type conversion edge-cases th
 When the idea for method overloading was raised before some responses were concerned that it would have a performance impact on all applications.
 
 This is due to needing to add extra information about what types a method will accept, even if the class itself doesn't use method overloading, as the child classes could implement another method with the same name.
-
 
 ```
 class Foo {
@@ -70,7 +68,6 @@ class FooBar {
         return $a + $b;
     }
 }
-
 
 $foobar = new FooBar();
 $foobar->sum($x1, $x2);
