@@ -12,7 +12,7 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Consistent callables](https://github.com/Danack/RfcCodex/blob/master/consistent_callables.md)
 
-[Enums](https://github.com/Danack/RfcCodex/blob/master/consistent_callables.md)
+[Enums](https://github.com/Danack/RfcCodex/blob/master/enums.md)
 
 [Generics](https://github.com/Danack/RfcCodex/blob/master/generics.md)
 
