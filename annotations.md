@@ -1,133 +1,100 @@
-# Method overloading
+# Annotations
 
 ## General idea
 
-Other languages allow multiple versions of the same method with the same name but with different parameter types.
+Sometimes it is more convenient to write some data that is associated with particular piece of code with that code, rather than in a separate place.
 
-The exact method dispatched is chosen when the program runs depending on the parameter types passed in.
+For example, annotations are used to tell the Doctrine ORM how data is stored. For this 'Product' class, the annotation say which database table the data is stored in, the types of the columns and how to  map between 'Products' and 'Projects'.
 
 ```
-class Foo {
 
-    function sum(int $a, int $b): int
-    {
-        echo "int version was called\n";
-        return $a + $b;
-    }
-    
-    function sum(float $a, float $b): float
-    {
-        echo "float version was called\n";
-        return $a + $b;
-    }
+/**
+ * @Entity @Table(name="product")
+ * A thing that can be paid for
+ **/
+class Product
+{
+    /** @Id @Column(type="integer", name="id") @GeneratedValue **/
+    protected $id;
+
+    /** @Column(type="string") **/
+    protected $name;
+
+    /** @Column(type="string") **/
+    protected $description;
+
+    /**
+     * @var Project
+     * @ManyToOne(targetEntity="Osf\Model\Project")
+     * @JoinColumn(name="project_id", referencedColumnName="id")
+     */
+    protected $project;
+
+    ...
+
 }
 
-$foo = new Foo();
-$foo->sum(1, 2); // echos 'int version was called' 
-$foo->sum(1.1, 2.2); // echos 'float version was called'
+```
+
+The problem is, these annotations are string based rather than a defined syntax that is processed by the PHP compiler. The idea would be to make the annotations be part of the code with an appropriate syntax.
+
+```
+/**
+ * A thing that can be paid for
+ **/ 
+@Orm\Entity @Orm\Table(name="product")
+class Product
+{
+    @Orm\Id
+    @Orm\Column(type="integer", name="id")
+    @Orm\GeneratedValue
+    protected $id;
+
+    @Orm\Column(type="string")
+    protected $name;
+
+    @Orm\Column(type="string")
+    protected $description;
+
+    ...
+
+}
 
 ```
 
+People would prefer if they were properly defined syntax for various reasons including:
+
+* be able to access them in a standard way across all libraries.
+* have syntax checking when they are loaded.
+* performance - parsing strings by hand is much slower 
 
 
 ## Hurdles to overcome
 
+### Some people don't like annotations
 
-### PHP type juggling
+A lot of people (myself included) don't particuarly like any annotations.
 
-The main problem is that unlike other more statically typed languages, PHP does a lot of type-juggling at run-time. This means that the exact behaviour is hard to define. For example:
-
-Which function would `$foo->sum(17.4, 42)` call? 
-
-Other languages that have method overloading (e.g. Java) tend not to have type-juggling so they avoid quite a few problems with dynamic types.
-
-Also other languages that have method overloading (e.g. Java again) compile all the code in a program before running it. PHP doesn't and so has to make some decisions at run-time, which makes the behaviour of method overloading harder to define.
-
-Any RFC would need to address all of the different type conversion edge-cases that could occur
+Any RFC for annotations should show clearly how they are better than not having them - e.g. why a parsed version in PHP core is better than the current string versions we have.
 
 
-### Performance hit
+### The people who use annotations need to approve of the RFC
 
-When the idea for method overloading was raised before some responses were concerned that it would have a performance impact on all applications.
+The last vote on a RFC that implemented annotations failed on a vote of 14-22.
 
-This is due to needing to add extra information about what types a method will accept, even if the class itself doesn't use method overloading, as the child classes could implement another method with the same name.
-
-```
-class Foo {
-    function sum(int $a, int $b): int
-    {
-        echo "int version was called\n";
-        return $a + $b;
-    }
-}
-
-class FooBar {
-    function sum(float $a, float $b): float
-    {
-        echo "float version was called\n";
-        return $a + $b;
-    }
-}
-
-$foobar = new FooBar();
-$foobar->sum($x1, $x2);
-```
-
-
-### People have strong feelings for method overloading
-
-
-Although some people like method overloading, my impression is that most people who have experienced method overloading / dynamic dispatch have come to hate it. 
-
-### Lacking a strong reason
-
-A really strong argument for why method overloading is a good thing needs to be made as well, particularly as
-the equivalent behaviour can be done in userland.
-
-None of the RFCs seem to have made a really clear case of why method overloading _needs_ to be included, rather than just be a 'nice to have'.
-
+One of the main reasons for this is that the people who use annotation, particularly Drupal and Doctrine projects said that the proposed implementation 
 
 ## Forecast
 
-Not likely to ever happen.
-
+Will probably happen when some makes an implementation that satisfies the use-cases of the current string based annotations in PHP, and that is technically good enough to be in core.
 
 ## Notes
 
-### Userland implementation
+7th time the charm?
 
-Method overloading is trivially implementable in userland.
-
-```
-/**
- * @method sum(int $a, int $b): int;
- * @method sum(float $b, float $b): float;
- */
-class Foo
-{
-    public function __call($name, $arguments)
-    {
-        if ($name === 'sum' && is_int($arguments[0]) && is_int($arguments[1])) {
-            return $this->sumInts($arguments[0], $arguments[1]);
-        }
-        if ($name === 'sum' && is_float($arguments[0]) &&
-is_float($arguments[1])) {
-            return $this->sumFloats($arguments[0], $arguments[1]);
-        }
-        throw new \InvalidArgumentException("Don't know how to call this");
-    }
-
-    private function sumInts(int $a, int $b): int
-    {
-        // echo "sumInts was called.\n";
-        return $a + $b;
-    }
-
-    private function sumFloats(int $a, int $b): int
-    {
-        // echo "sumFloats was called.\n";
-        return $a + $b;
-    }
-}
-
-```
+https://wiki.php.net/rfc/attributes
+https://wiki.php.net/rfc/annotations_v2
+https://wiki.php.net/rfc/reflection_doccomment_annotations
+https://wiki.php.net/rfc/simple-annotations
+https://wiki.php.net/rfc/annotations-in-docblock
+https://wiki.php.net/rfc/annotations

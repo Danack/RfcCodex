@@ -6,6 +6,8 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 ## Things still be discussed 
 
+[Annotations](https://github.com/Danack/RfcCodex/blob/master/annotations.md)
+
 [Briefer closure syntax](https://github.com/Danack/RfcCodex/blob/master/briefer_closure_syntax.md)
 
 [Class scoping improvements](https://github.com/Danack/RfcCodex/blob/master/class_scoping_improvements.md)
