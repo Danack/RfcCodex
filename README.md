@@ -22,8 +22,8 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Standardise core library](https://github.com/Danack/RfcCodex/blob/master/standardise_core_library.md)
 
+[Union types](https://github.com/Danack/RfcCodex/blob/master/union_types.md)
 
-[Union types]()
 
 # Ideas that overcame their challenges
 
