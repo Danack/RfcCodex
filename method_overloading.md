@@ -94,6 +94,38 @@ Not likely to ever happen.
 
 ## Notes
 
+### Alternative solution to the same problem 
+
+One suggested used for method overloading was for a use-case along these lines:
+
+```
+class Foo {
+    public function get($name, string $default) : string;
+    public function get($name, int $default) : int;
+    public function get($name, Bar $default) : Bar;
+}
+```
+
+where the difference between the methods is that the return type is the same type as the `$default` parameter.
+
+This could be solved with some solution that touched generics and union types.
+
+```
+type T = int|string|Bar;
+
+class Foo {
+    public function get($name, T $default) : T;
+}
+```
+Or
+
+```
+class Foo {
+    public function get($name, <T = int|string|Bar> $default) : T;
+}
+```
+
+
 ### Userland implementation
 
 Method overloading is trivially implementable in userland.

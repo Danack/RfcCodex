@@ -115,3 +115,36 @@ Likely to happen when one day, when one of the core developers gets bored enough
 ## Notes
 
 If people are really desperate for generics, then they should look at using [https://preprocess.io/](https://preprocess.io/) to start using generics through that, rather than waiting for them in PHP.
+
+
+### Usage as a solution to overloading methods.
+
+One suggested used for method overloading was for a use-case along these lines:
+
+```
+class Foo {
+    public function get($name, string $default) : string;
+    public function get($name, int $default) : int;
+    public function get($name, Bar $default) : Bar;
+}
+```
+
+where the difference between the methods is that the return type is the same type as the `$default` parameter.
+
+This could be solved with some solution that touched generics and union types.
+
+```
+type T = int|string|Bar;
+
+class Foo {
+    public function get($name, T $default) : T;
+}
+```
+Or
+
+```
+class Foo {
+    public function get($name, <T = int|string|Bar> $default) : T;
+}
+```
+
