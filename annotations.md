@@ -82,7 +82,12 @@ Any RFC for annotations should show clearly how they are better than not having 
 
 The last vote on a RFC that implemented annotations failed on a vote of 14-22.
 
-One of the main reasons for this is that the people who use annotation, particularly Drupal and Doctrine projects said that the proposed implementation 
+One of the main reasons for this is that the people who use annotation, particularly Drupal and Doctrine projects said that the proposed implementation was not a good fit for their use cases.
+
+The data that could be stored according to that RFC was either an array of strings, or array of ast\nodes. 
+
+This misses the middle-ground use case of wanting an annotation to be an arbitrarily deep nested array.  
+
 
 ## Forecast
 

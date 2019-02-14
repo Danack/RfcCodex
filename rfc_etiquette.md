@@ -6,7 +6,31 @@ There are some behaviours that I see people do when discussing RFCs, and other s
 
 The site wiki.php.net/rfc is a tool that is meant to allow people to draft RFCs and share the idea with other people who want to work on the RFC before it is a polished idea, and before it is ready to be presented to the world.
 
-Having someone other than the RFC author announce the RFC on internals before the author thinks the RFC is ready for comment, is an act of sabotage.
+Having someone other than the RFC author announce the RFC on internals before the author thinks the RFC is ready for comment, is "not okay". If you discuss an RFC on internals before the author thinks the RFC is ready to be dicussed, the only thing that could achieve is to make the conversation less productive.
+
+If you want to influence how the RFC is drafted, it is appropriate to reach out to the RFC author, and offer to help them.
+
+## Do open new RFCs rather than re-use existing documents.
+
+When revisiting ideas, and the previous version of an RFC hasn't been discussed in a long time (e.g. more than 6 months) or when a previous version was declined by vote, it is preferable to open new documents on the wiki, rather than re-use existing documents.
+
+We have rules in place about when RFCs are allowed to be put into voting. If a RFC document has been re-used there could be some confusion about when it is allowed to be put to a vote.
+
+Additionally, leaving the previous RFC document intact, with the results of a vote if one was taken, leaves a clearer document trail than if the document has been recyled. 
+
+To put it more another way - in general the status of an RFC should not be moved backwards to an earlier status. In practice there will be times when people accidentally open the voting too early, or some serious problem is found with an RFC during the voting phase, in which cases it's fine to move the status back until the problem is fixed.
+
+
+## Don't volunteer other people for huge amounts of work
+
+The response to some RFCs has been to suggest that the RFC doesn't cover enough scope, and that the RFC author should make the RFC be a lot bigger.
+
+While that sounds reasonable on the surface, the amount of time people have to work on PHP RFCs is often limited. Having someone tell you "thanks for volunteering, but now I want you to do a lot more work than you volunteered for" is subtle way o
+
+It's okay for RFCs to be small in scope, so long as they are self-contained.
+
+It would only be appropriate to say that the RFC needs to be bigger if it would otherwise leave new inconsistencies in the language that would need to be resolved before the next release.
+
 
 ## Do try to talk about the problem before talking about possible solutions
 
@@ -21,30 +45,49 @@ Some people might offer different solutions to the same set of problems. If the 
 Additionally, although some sets of problems may be closely related, by talking about the problems clearly, they might be broken up into separate problems to be solved by separate RFCs.
 
 
-## Don't volunteer other people for huge amounts of work
-
-The response to some RFCs has been to suggest that the RFC doesn't cover enough scope, and that the RFC author should make the RFC be a lot bigger.
-
-While that sounds reasonable on the surface, the amount of time people have to work on PHP RFCs is often limited. Having someone tell you "yeah, you need to contribute a few months of work" is a dick move.
-
-It's okay for RFCs to be small in scope, so long as they are self-contained. It would only be appropriate to say that the RFC needs to be bigger if it would otherwise leave new inconsistencies in the language that would need to be resolved before the next release.
-
-
 ## Don't say that other people's use cases are invalid
 
 The response to some RFCs is disappointing. Rather than accepting other people as being individuals with different priorities and motivations, some people on internals have responded with "I don't want to use this proposed feature, therefore I don't think any people should use this feature".
 
-It's okay to question how many people would need a feature, but when you have someone saying "I want this feature", and your response is "I don't believe you actually want that feature", then you've crossed a line from being reasonable to arguing based on Solipsism, which is not going to lead to a productive discussion.
+When you have someone saying "I want this feature", and your response is "I don't believe you actually want that feature", then you've crossed a line from being reasonable to arguing based on Solipsism, which is not going to lead to a productive discussion.
+
+It's still okay to question how many people would want or actually use a feature, but just straight refusing to believe that anyone could find something useful
 
 
+## Do try to improve RFCs
+
+Even if you disagree with an RFC, it is good to try suggest improvements to it, if you can see them, rather than just criticising the RFC.
+
+If the vote passes, and the RFC contains your suggested improvement - congratulations you've helped make PHP better.
+
+If the vote doesn't pass, even though the RFC was as good as it could be, then it avoids thinking about reopening the RFC once they realise that
 
 
+## Don't be too put out if people don't like your RFC
+
+It is quite natural for an RFC author to think that the RFC the are proprosing is clearly a good idea - why else would they be proposing it? It's also natural for them to hope that everyone else will think it's a good idea also.
+
+However it is also entirely possible for people to have rational reasons to disagree with a proposal. 
+
+Maybe some people haven't experienced the problem the RFC is trying to solve, and so they don't think the problem is even one that needs solving.
+
+Maybe they have experienced in a different language what is being proposed for PHP, and they didn't like using it in that language, so they find it hard to see why it would be good for PHP.  
+
+Whatever the reason, when people respond with something less than overwhelming support for the idea, they aren't doing it out of malice, they're doing it because they also want PHP to be the best possible language it can be - they just disagree about what that means. 
+ 
 
 
+## Do take your time to respond to emails
 
+For a couple of reasons, it is appropriate to take time to read and compose emails about RFCs; much longer than you spend writing emails on other subjects.
 
+> "I'm sorry I wrote you such a long letter; I didn't have time to write a short one.
 
+Emails that are sent on PHP internals that discuss RFCs are read by hundreds if not thousands of people.
 
+Writing concisely will save a lot of other people's time. It is also far more likely that people will read and understand your email than if you write long emails.
+
+Additionally, unless someone was just discussing trivial issues (such as a typo in the RFC) it is appropriate to think about and digest what they were saying, rather than giving a response based on your first thoughts.
 
 
 
