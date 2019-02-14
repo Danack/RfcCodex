@@ -6,7 +6,7 @@ Other languages allow programmers to define sets of constants. For example the d
 
 ```
 enum Days {
-   SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, ;
+   SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, ;
 }
 ```
 
