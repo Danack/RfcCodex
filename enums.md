@@ -40,6 +40,7 @@ In the example above, if we missed one of the days in the switch statement, some
 
 There are some small differences in how enums could be implemented that need to be though through. e.g. should definitions of enums be allowed to define some of the values used for the entries, or not:
 
+```
 enum Foo {
     
     ZOQ,       // Defaults to 0?
@@ -47,6 +48,7 @@ enum Foo {
     PIK,       // defaults to 3?  
     ZEBRANKY = 'Frungy' // Allow mixture of types for enums?
 };
+```
 
 
 ### Time
