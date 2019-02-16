@@ -6,7 +6,7 @@ There are some behaviours that I see people do when discussing RFCs, and other s
 
 The site wiki.php.net/rfc is a tool that is meant to allow people to draft RFCs and share the idea with other people who want to work on the RFC before it is a polished idea, and before it is ready to be presented to the world.
 
-Having someone other than the RFC author announce the RFC on internals before the author thinks the RFC is ready for comment, is "not okay". If you discuss an RFC on internals before the author thinks the RFC is ready to be dicussed, the only thing that could achieve is to make the conversation less productive.
+Having someone other than the RFC author announce the RFC on internals before the author thinks the RFC is ready for comment, is "not okay". If you discuss an RFC on internals before the author thinks the RFC is ready to be discussed, the only thing that could achieve is to make the conversation less productive.
 
 If you want to influence how the RFC is drafted, it is appropriate to reach out to the RFC author, and offer to help them.
 
