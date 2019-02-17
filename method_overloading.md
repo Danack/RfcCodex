@@ -111,17 +111,8 @@ where the difference between the methods is that the return type is the same typ
 This could be solved with some solution that touched generics and union types.
 
 ```
-type T = int|string|Bar;
-
 class Foo {
-    public function get($name, T $default) : T;
-}
-```
-Or
-
-```
-class Foo {
-    public function get($name, <T = int|string|Bar> $default) : T;
+    public function get<T : int|string|Bar>($name, T $default) : T;
 }
 ```
 
