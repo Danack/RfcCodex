@@ -34,7 +34,6 @@ Structs
 
 Explicit defaults
 
-https://wiki.php.net/rfc/skipparams
 
 
 
