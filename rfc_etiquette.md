@@ -25,7 +25,11 @@ To put it more another way - in general the status of an RFC should not be moved
 
 The response to some RFCs has been to suggest that the RFC doesn't cover enough scope, and that the RFC author should make the RFC be a lot bigger.
 
-While that sounds reasonable on the surface, the amount of time people have to work on PHP RFCs is often limited. Having someone tell you "thanks for volunteering, but now I want you to do a lot more work than you volunteered for" is subtle way o
+While that sounds reasonable on the surface, the amount of time people have to work on PHP RFCs is often limited. Having someone say "thanks for volunteering, but now I want you to do a lot more work than you volunteered for" is a subtle way of preventing RFCs from being implemented.
+
+In some cases the suggestion to make the RFC be bigger has been well-intentioned, and so the damage has been accidental.
+
+In other cases, it would seem that the suggestion that the RFC needs to be a lot bigger or not done at all has come from someone who doesn't want the RFC to pass, which could be interpreted as deliberately making it more difficult for the RFC to pass. 
 
 It's okay for RFCs to be small in scope, so long as they are self-contained.
 
