@@ -25,6 +25,19 @@ The purpose of these documents is to avoid information from being lost and to tr
 [Union types](https://github.com/Danack/RfcCodex/blob/master/union_types.md)
 
 
+## TODO
+
+
+Async
+
+Structs
+
+Explicit defaults
+
+https://wiki.php.net/rfc/skipparams
+
+
+
 # Ideas that overcame their challenges
 
 [Co- and contra-variance](https://github.com/Danack/RfcCodex/blob/master/co_and_contra_variance.md)
