@@ -146,7 +146,7 @@ is_float($arguments[1])) {
         return $a + $b;
     }
 
-    private function sumFloats(int $a, int $b): int
+    private function sumFloats(float $a, float $b): float
     {
         // echo "sumFloats was called.\n";
         return $a + $b;
