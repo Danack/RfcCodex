@@ -69,7 +69,7 @@ If the vote doesn't pass, even though the RFC was as good as it could be, then i
 
 ## Don't be too put out if people don't like your RFC
 
-It is quite natural for an RFC author to think that the RFC the are proprosing is clearly a good idea - why else would they be proposing it? It's also natural for them to hope that everyone else will think it's a good idea also.
+It is quite natural for an RFC author to think that the RFC the are proposing is clearly a good idea - why else would they be proposing it? It's also natural for them to hope that everyone else will think it's a good idea also.
 
 However it is also entirely possible for people to have rational reasons to disagree with a proposal. 
 
