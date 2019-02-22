@@ -1,6 +1,6 @@
 # RFC etiquette
 
-There are some behaviours that I see people do when discussing RFCs, and other software projects (both open source, and closed source) that I think are either subtly but incredibly rude, or otherwise do not help people have a productive conversation.
+There are some behaviours that I see people do when discussing RFCs, and other software projects (both open source, and closed source) that I think are either subtly, but incredibly rude, or otherwise do not help people have a productive conversation.
 
 ## Don't publicise draft work
 
@@ -16,9 +16,9 @@ When revisiting ideas, and the previous version of an RFC hasn't been discussed 
 
 We have rules in place about when RFCs are allowed to be put into voting. If a RFC document has been re-used there could be some confusion about when it is allowed to be put to a vote.
 
-Additionally, leaving the previous RFC document intact, with the results of a vote if one was taken, leaves a clearer document trail than if the document has been recyled. 
+Additionally, leaving the previous RFC document intact, with the results of a vote if one was taken, leaves a clearer document trail than if the document has been recycled. 
 
-To put it more another way - in general the status of an RFC should not be moved backwards to an earlier status. In practice there will be times when people accidentally open the voting too early, or some serious problem is found with an RFC during the voting phase, in which cases it's fine to move the status back until the problem is fixed.
+To put it another way - in general the status of an RFC should not be moved backwards to an earlier status. In practice there will be times when people accidentally open the voting too early, or some serious problem is found with an RFC during the voting phase, in which cases it's fine to move the status back until the problem is fixed. But in general leaving each RFC document with a clear history of what happened to that RFC makes it easier to understand past discussions.
 
 
 ## Don't volunteer other people for huge amounts of work
@@ -40,7 +40,7 @@ It would only be appropriate to say that the RFC needs to be bigger if it would 
 
 Some RFCs don't make it clear what problem it is they are trying to solve before proposing a solution.
 
-This leads to the discussions being not productive as if the problem was introduced first.
+This leads to the discussions being not as productive as if the problem was introduced first.
 
 Some people might disagree on what the exact problem is, or disagree that it even is a problem that needs solving to begin with. If people can't clearly understand that there is a problem that needs solving, then the discussion about possible solutions is going to be incredibly heated, with people not understanding the other side.
 
@@ -55,16 +55,16 @@ The response to some RFCs is disappointing. Rather than accepting other people a
 
 When you have someone saying "I want this feature", and your response is "I don't believe you actually want that feature", then you've crossed a line from being reasonable to arguing based on Solipsism, which is not going to lead to a productive discussion.
 
-It's still okay to question how many people would want or actually use a feature, but just straight refusing to believe that anyone could find something useful
+It's still okay to question how many people would want or actually use a feature, but just straight refusing to believe that anyone could find something useful doesn't give a productive discussion.
 
 
 ## Do try to improve RFCs
 
 Even if you disagree with an RFC, it is good to try suggest improvements to it, if you can see them, rather than just criticising the RFC.
 
-If the vote passes, and the RFC contains your suggested improvement - congratulations you've helped make PHP better.
+If the vote passes, and the RFC contains your suggested improvement - congratulations, you've helped make PHP better.
 
-If the vote doesn't pass, even though the RFC was as good as it could be, then it avoids thinking about reopening the RFC once they realise that
+If the vote doesn't pass, even though the RFC was as good as it could be, then it will be clear to anyone who might think about reopening the RFC that it needs to be dramatically improved or take another approach for it to have a chance to be passed, rather than just having a small tweak. 
 
 
 ## Don't be too put out if people don't like your RFC
@@ -89,7 +89,7 @@ For a couple of reasons, it is appropriate to take time to read and compose emai
 
 Emails that are sent on PHP internals that discuss RFCs are read by hundreds if not thousands of people.
 
-Writing concisely will save a lot of other people's time. It is also far more likely that people will read and understand your email than if you write long emails.
+Writing concisely will save a lot of other people's time. It is also far more likely that people will read and understand your email if it is short than if you write long emails.
 
 Additionally, unless someone was just discussing trivial issues (such as a typo in the RFC) it is appropriate to think about and digest what they were saying, rather than giving a response based on your first thoughts.
 
