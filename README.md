@@ -4,7 +4,7 @@ There are some notes on PHP RFCs, why some were declined, and what others might 
 
 The purpose of these documents is to avoid information from being lost and to try to avoid conversations needing to be repeated multiple times on PHP internals.
 
-## Things still be discussed 
+## Things still being discussed 
 
 [Annotations](https://github.com/Danack/RfcCodex/blob/master/annotations.md)
 
