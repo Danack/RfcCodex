@@ -10,7 +10,7 @@ strpos(string $haystack, string $needle [, int $offset = 0 ] ) : mixed
 
 The result of the function will be either an int or false if the needle wasn't found in the haystack string.
 
-Because we can't currently express 'int or false' in the PHP type system, we use the type 'mixed' in the documentation, and possibly soon in the code.
+Because we can't currently express 'int or false' in the PHP type system, we use the type 'mixed' in the documentation, and [possibly soon in the code](https://wiki.php.net/rfc/mixed-typehint).
 
 The idea of union types is to allow people to express types as unions of other types. In the case for strpos the return value will either be int or false, which could be represented by int|bool, or more closely by int|false, if true and false are allowed as 'types'.
 
