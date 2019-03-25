@@ -8,7 +8,7 @@ The site wiki.php.net/rfc is a tool that is meant to allow people to draft RFCs 
 
 Having someone other than the RFC author announce the RFC on internals before the author thinks the RFC is ready for comment, is "not okay". If you discuss an RFC on internals before the author thinks the RFC is ready to be discussed, the only thing that could achieve is to make the conversation less productive.
 
-If you want to influence how the RFC is drafted, it is appropriate to reach out to the RFC author, and offer to help them.
+If you want to influence how the RFC is drafted, it is appropriate to reach out to the RFC author, and offer to help them. 
 
 ## Do open new RFCs rather than re-use existing documents.
 
@@ -94,5 +94,31 @@ Writing concisely will save a lot of other people's time. It is also far more li
 Additionally, unless someone was just discussing trivial issues (such as a typo in the RFC) it is appropriate to think about and digest what they were saying, rather than giving a response based on your first thoughts.
 
 
+## Don't try to demand that people justify their opinions
+
+It is the role of RFC authors to convince other people that an RFC is definitely a good idea, and that people should vote yes on it.
+
+People might have many reasons to vote no, e.g. not convinced the problem the RFC addresses is one that needs solving, not convinced the problem is solved in the right way, not convinced that the solution is a correct one. Some of these feelings about why a proposal doesn't deserve a 'yes' vote are hard to express.
+
+It isn't the responsibility of voters to explain why they're voting no.
 
 
+## Don't shout down other people
+
+Even if you don't like an RFC being discussed, it is more appropriate to ignore that thread, rather than asking people in the thread to stop talking about an idea you don't like.
+
+
+# Contacting RFC authors should go through PHP internals list
+
+Drafting RFCs and pushing them through internals is an exhausting process. Several PHP contributors have suddenly stopped contributing to the project after successfully getting an RFC passed, due to them being entirely fed up.
+
+One of the things that is tiresome is people contacting the RFC author through  communication channels (other than the PHP internals list), particularly when what they are going to say is either negative or even just based on not understanding part of the RFC.
+
+There is a difference between giving positive feedback and negative feedback. And there is a difference between giving feedback to someone you have communicated with many times before, and contacting someone for the first time.
+
+It's hard to draw an exact line of where communication is fine to go off-list, and where it should stay on list. But here are some examples:
+
+"You are awesome for writing such an amazing RFC" - fine to send off-list.
+"I found some typos in the RFC" - probably fine to send off-list, particularly if you communicate with the RFC author already.
+"Please can you answer this question about the RFC" - possibly fine to send off-list, but only if you know the RFC author already.
+"The RFC is a terrible idea for these reasons" - should only be sent via the list. 

@@ -34,7 +34,7 @@ Structs
 
 Explicit defaults
 
-
+Tuple returns
 
 
 # Ideas that overcame their challenges
