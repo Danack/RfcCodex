@@ -22,11 +22,11 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Standardise core library](https://github.com/Danack/RfcCodex/blob/master/standardise_core_library.md)
 
+[Ternary right associative](https://github.com/Danack/RfcCodex/blob/master/ternary_operator_right_associative.md)
+
 [Union types](https://github.com/Danack/RfcCodex/blob/master/union_types.md)
 
-
 ## TODO
-
 
 Async
 
@@ -44,7 +44,7 @@ Tuple returns
 
 ## Contributing
 
-Please read the [contributing](https://github.com/Danack/RfcCodex/blob/master/CONTRIBUTING.md) guidelines before writing your 4,000 word novel on why some RFC really should pass.
+Please read the [contributing](https://github.com/Danack/RfcCodex/blob/master/CONTRIBUTING.md) guidelines before writing your 4,000 word novelella on why some RFC really should pass.
 
 ## Disclaimer
 
