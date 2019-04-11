@@ -81,11 +81,11 @@ This has a downside in that internals people don't appear to be too enthusiastic
 
 ## Forecast
 
-Not likely to ever happen without someone coming up with cunning plan.
+Not likely to ever happen without someone coming up with a cunning plan.
 
 The consensus seems to be that the barrier to making these changes is too high make the change worth doing.
 
-It's much more likely that an alternative approach, such as improving PHP with [scalar objects](https://github.com/nikic/scalar_objects) would take the language to 
+It's much more likely that an alternative approach, such as improving PHP with [scalar objects](https://github.com/nikic/scalar_objects) would take the language to a place where most of the major 'inconsistencies' could be removed. 
 
 ## Notes
 
