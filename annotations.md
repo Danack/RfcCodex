@@ -6,7 +6,7 @@ Sometimes it is more convenient to write some data that is associated with parti
 
 For example, annotations are used to tell the Doctrine ORM how data is stored. For this 'Product' class, the annotation say which database table the data is stored in, the types of the columns and how to  map between 'Products' and 'Projects'.
 
-```
+```php
 
 /**
  * @Entity @Table(name="product")
@@ -38,7 +38,7 @@ class Product
 
 The problem is, these annotations are string based rather than a defined syntax that is processed by the PHP compiler. The idea would be to make the annotations be part of the code with an appropriate syntax.
 
-```
+```php
 /**
  * A thing that can be paid for
  **/ 

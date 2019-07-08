@@ -25,7 +25,7 @@ Some functions have underscores....other do not.
 
 Some functions use abbreviations...others do not.
 
-```
+```php
 function usleep(int $micro_seconds) : void; 
 function microtime([bool $get_as_float]): mixed;
 ```
@@ -37,7 +37,7 @@ This is not a complete list of the diversification in naming.
 
 'Haystack -> needle' vs 'needle -> haystack'. 
 
-```
+```php
 function strpos(string $haystack, mixed $needle [, int $offset = 0]): int;
 
 function stristr(string $haystack, mixed $needle [, bool $before_needle = false ] ): string;

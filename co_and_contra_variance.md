@@ -5,7 +5,7 @@
 
 Consider this specific case:
 
-```
+```php
 class A {
     function foo(): B {
         return new B();

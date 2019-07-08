@@ -12,7 +12,7 @@ Currently there is no way to enforce that some methods should be available to so
 
 Java has the the idea of nested classes, where a class can be defined within another class, and is only available from within that outer class.
 
-```
+```php
 
 class Outer_Demo {
    int num;

@@ -7,7 +7,7 @@ Sometimes you want a single class to only accept or return a certain type, but y
 For example, imagine we want one stack class that stores and returns ints, and another stack that stores and returns objects of type Foo. We could define these classes like:
 
 
-```
+```php
 class IntStack
 {
     /** int[] */
@@ -59,7 +59,7 @@ However, this has a downside of having absolutely duplicated code for each of th
 The idea of generics is to be able to write the class with a 'generic' type and when the class is instantiating, to specify the type at run-time. For example:
 
 
-```
+```php
 class GenericStack<T>
 {
     /** T[] */
@@ -121,7 +121,7 @@ If people are really desperate for generics, then they should look at using [htt
 
 One suggested used for method overloading was for a use-case along these lines:
 
-```
+```php
 class Foo {
     public function get($name, string $default) : string;
     public function get($name, int $default) : int;
@@ -135,7 +135,7 @@ This could be solved with some solution that touched generics and union types.
 
 
 
-```
+```php
 class Foo {
     public function get<T : int|string|Bar>($name, T $default) : T;
 }
@@ -143,7 +143,7 @@ class Foo {
 
 Or possibly, 
 
-```
+```php
 type T = int|string|Bar;
 
 class Foo {

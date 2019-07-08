@@ -6,7 +6,7 @@ Quoting from [phpsadness](http://phpsadness.com/sad/30):
 
 (In PHP) the ternary operator is left-associative and therefore behaves entirely 'incorrectly':
 
-```
+```bash
 $ cat ternary.php
 <?php
 echo (FALSE ? "a" : FALSE ? "b" : "c")."\n";
@@ -24,7 +24,7 @@ b
 
 In any other language with a ternary operator, you can stack them and build an if-elseif-elseif-else expression:
 
-```
+```bash
 $ cat ternary.pl
 #!/usr/bin/perl -w
 use strict;
@@ -63,13 +63,13 @@ People would need convincing that breaking existing code would justified by the 
 
 Nested ternaries in real code do not look like the 'clean' examples given:
 
-```
+```php
 print +(0 ? "a" : 0 ? "b" : "c")."\n";
 ```
 
 Instead, when you use actual variable names with them they look much more like this:
 
-```
+```php
 print($isBookingBlocked ? "Unavailable" : $hasBeenReserved ? "Reserved" : "Open") . "\n";
 ```
 
@@ -77,7 +77,7 @@ Although people who like ternaries may disagree, this code is not easy to read. 
 
 Using actual if else statements makes the code far easier to read.
 
-```
+```php
 $status = "Open";
 if ($isBookingBlocked) {
     $status = "Unavailable";
