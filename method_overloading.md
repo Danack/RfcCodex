@@ -6,7 +6,7 @@ Other languages allow multiple versions of the same method with the same name bu
 
 The exact method dispatched is chosen when the program runs depending on the parameter types passed in.
 
-```
+```php
 class Foo {
 
     function sum(int $a, int $b): int
@@ -52,7 +52,7 @@ When the idea for method overloading was raised before some responses were conce
 
 This is due to needing to add extra information about what types a method will accept, even if the class itself doesn't use method overloading, as the child classes could implement another method with the same name.
 
-```
+```php
 class Foo {
     function sum(int $a, int $b): int
     {
@@ -98,7 +98,7 @@ Not likely to ever happen.
 
 One suggested used for method overloading was for a use-case along these lines:
 
-```
+```php
 class Foo {
     public function get($name, string $default) : string;
     public function get($name, int $default) : int;
@@ -110,7 +110,7 @@ where the difference between the methods is that the return type is the same typ
 
 This could be solved with some solution that touched generics and union types.
 
-```
+```php
 class Foo {
     public function get<T : int|string|Bar>($name, T $default) : T;
 }
@@ -121,7 +121,7 @@ class Foo {
 
 Method overloading is trivially implementable in userland.
 
-```
+```php
 /**
  * @method sum(int $a, int $b): int;
  * @method sum(float $b, float $b): float;

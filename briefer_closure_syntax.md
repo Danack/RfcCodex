@@ -5,7 +5,7 @@
 Closures in PHP are quite verbose compared to those in other languages.
 
 
-```
+```php
 $add1 = function ($x) {
     return $x + 1;
 };
@@ -14,7 +14,7 @@ $add1 = function ($x) {
 
 This is similar to how closures were originally implemented in Javascript.
 
-```
+```php
 
 var add1 = function (x) {
     retun x + 1;
@@ -24,7 +24,7 @@ var add1 = function (x) {
 
 Since then however, as Javascript developers thought they were too long, they introduced arrow functions.
 
-```
+```php
 var add1 = x => x + 1;
 ```
 
@@ -47,7 +47,7 @@ The exact implementation that is most appropriate still needs to be decided.
 
 In Javascript, both the original closures and arrow functions will automatically inherit parameters from the scope they are defined in. 
 
-```
+```php
 function getAddFunction(x) {
     return y => y + x;
 }
@@ -62,7 +62,7 @@ var result = fn(2);
 
 For the current closure syntax in PHP, you must explicitly pull in variables from the scope the closure is defined in.
 
-```
+```php
 function getAddFunction($x) {
     return function($y) use ($x) {
         return $x + $y;

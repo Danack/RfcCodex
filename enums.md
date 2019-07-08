@@ -4,7 +4,7 @@
 
 Other languages allow programmers to define sets of constants. For example the days of week.
 
-```
+```php
 enum Days {
    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, ;
 }
@@ -12,7 +12,7 @@ enum Days {
 
 These sets of constants can be used as a type (for parameter and return types) and the individual constants can be referenced.
 
-```
+```php
 function getDayDescription(Days day) : string {
 
     switch (day) {
@@ -40,7 +40,7 @@ In the example above, if we missed one of the days in the switch statement, some
 
 There are some small differences in how enums could be implemented that need to be though through. e.g. should definitions of enums be allowed to define some of the values used for the entries, or not:
 
-```
+```php
 enum Foo {
     
     ZOQ,       // Defaults to 0?
