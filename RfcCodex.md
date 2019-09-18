@@ -8,8 +8,6 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Annotations](https://github.com/Danack/RfcCodex/blob/master/annotations.md)
 
-[Briefer closure syntax](https://github.com/Danack/RfcCodex/blob/master/briefer_closure_syntax.md)
-
 [Class scoping improvements](https://github.com/Danack/RfcCodex/blob/master/class_scoping_improvements.md)
 
 [Consistent callables](https://github.com/Danack/RfcCodex/blob/master/consistent_callables.md)
@@ -36,10 +34,36 @@ Explicit defaults
 
 Tuple returns
 
+Null short-circuiting - https://wiki.php.net/rfc/nullsafe_calls
+
+Type declarations `type number = float | int;`
+
+Strong typing 
+
+```
+class RetryLimit extends int {
+
+}
+
+
+function foo(RetryLimit $rl) {
+    
+    for ($i = 0; $i < $rl ; $i += 1) {
+        if(bar()) {
+            break;        
+        }
+    } 
+}
+
+
+```
+
 
 # Ideas that overcame their challenges
 
 [Co- and contra-variance](https://github.com/Danack/RfcCodex/blob/master/co_and_contra_variance.md)
+
+[Briefer closure syntax](https://github.com/Danack/RfcCodex/blob/master/briefer_closure_syntax.md)
 
 
 ## Contributing
