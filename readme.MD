@@ -1,5 +1,12 @@
 # PHP codex
 
+The project has 3 parts:
+
+* RFC Codex - a summary of previous RFC discussions.
+
+* PHP Project coordination - a list of work that people either are or could be working on.
+
+* PHP internals links - links to how to develop PHP core/extensions.
 
 ## RFC codex
 
@@ -23,8 +30,6 @@ This information is not opinionated - I will add information about things people
 
 ## PHP internals links
 
-A 
-
-
+A set of links for that contain useful information for anyone looking to develop PHP core or PHP extensions.
 
 [PHP internals](https://github.com/Danack/RfcCodex/blob/master/internals_info.md)
