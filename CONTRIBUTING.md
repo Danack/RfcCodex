@@ -1,5 +1,21 @@
 
-# Contributing
+# Contributing to PHP project coordination
+
+Please either open a PR or open an issue that describes any work that is in progress, that you would like to have some other people help with.
+
+It is also possible to suggest some ideas that could be worked on. However I'm not going to list every possible piece of work; I'm only going to list things that either people have already started themselves, or a really obviously good thing. 
+
+As otherwise there is an infinite amount of things that could be worked on.
+
+# Contributing to PHP internals info
+
+If you have link to useful info about PHP internals, please suggest it as a PR or issue.
+
+
+# Contributing to RFC Codex
+
+The RFC Codex that describes previous RFC discsussions is going to be more restricted in what information is added.
+
 
 ## What to contribute
 
