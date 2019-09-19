@@ -58,6 +58,12 @@ The number of people who are able to edit our wiki are very small due to how har
 
 Link: https://github.com/brzuchal/php-dev
 
+### Smoother PECL signup process
+
+Currently the pecl signup process is heavily 'gate-keepered'. People sometimes wait weeks for their account to be approved. We could change the workflow, so that people have to submit a compilable repo, and then after that their account is either automatically approved, or the number of people who can approve those validated signup requests should be increased.
+
+Link: https://github.com/php-pecl/ProjectCoordination/blob/master/pecl_signup_allow_full_repos.md
+
 ## Bugs to work on
 
 ### PDO -> PDO driver error conditions
