@@ -3,12 +3,20 @@
 This is an experiment that attempts to make it much easier for people to find things to work on for PHP internals, related infrastructure, extensions and most other non-userland things.
 
 Due to it being an experiment, it's currently outside of the PHP project's infrastructure. 
- 
- 
- on my own server. PR's accepted at https://github.com/imagick/imagick for the file https://github.com/Danack/Imagick-demos/blob/master/public/stuff_to_work_on.php.
+
+If you have an item you would like added please provide:
+
+* a title
+* a short description
+* a link to where the work is described in greater detail, and people can ask questions.
+
+
+The link to where the work can be discussed could be bugs.php.net, a github/gitlab repo, a slack channel. Whatever you think is appropriate for the piece of work being discussed. 
+
+The main thing is that people should be able to see what needs to be done, and discuss it.
+
 
 ## RFCs to work on
-
 
 ### Union Types v2
 
@@ -34,16 +42,15 @@ Link: https://github.com/php-pecl/ProjectCoordination/blob/master/annotate_inter
 
 OSS Fuzz aims to find bugs by randomizing ("fuzzing") input. Phar has had a few bugs owing to edge cases in path processing and, being widely distributed form of PHP code, would benefit from fuzz testing. See https://github.com/google/oss-fuzz/tree/master/projects/php
 
-Link: https://github.com/php/php-src/tree/master/sapi/fuzzer
+Link: https://bugs.php.net/bug.php?id=78571
 
 ### ext/imap - Imap Extension - Reboot
 
 The IMAP extension, while used across many open projects, performs poorly when compared to userspace implementations like Horde/Imap_Client. The library on which it is based (c-client) is unmaintained since 2011. And, there are a ton of bugs. We need to formulate a plan to either (a) accept the performance/features for what they are and just fix bugs or (b) reboot the extension from the ground up. Help wanted to steer and implement.
  
-Link: https://github.com/php/php-src/tree/master/ext/imap
+Link: https://bugs.php.net/bug.php?id=78572
 
 ## Infrastructure stuff to work on
-
 
 ### Move documentation from SVN to Git/github
 
