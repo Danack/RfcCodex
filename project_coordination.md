@@ -30,7 +30,14 @@ Link: https://github.com/php/php-rfcs/pull/1
 
 The 'resource' type was needed before PHP had classes to represent non-trivial types. However since PHP now has classes, it would be good to replace the resource types used internally.
 
+Changing resources to objects only has an extremly minimal BC impact which is limited to code using the ``is_resource()`` and
+``get_resource_type()`` functions. This is due that a resource is produced as a return value from a function and passed as a parameter
+to all relevant functions.
+This means that these changes can occur in between minor version as can be seens with the resource to object migration for the Hash
+extension in PHP 7.2. [1]
+
 Link: https://github.com/php-pecl/ProjectCoordination/blob/master/change_resource_to_specific_type.md
+[1] https://www.php.net/manual/en/migration72.incompatible.php#migration72.incompatible.hash-ext-to-objects
 
 ### Core - Annotate internal function types
 
