@@ -2,7 +2,7 @@
 
 ## General idea
 
-PHP allows you to define a function with optional parameters, with a default value for that parameter, and the default value is used when the parameter is not passed to the function.
+PHP allows you to define a function with optional parameters, with a default value for those parameters, and the default value is used when the parameter is not passed to the function.
 
 ```
 <?php
@@ -90,7 +90,7 @@ Having the default value for a parameter change can be a pretty be BC break, and
 
 Really hard to say. I think this is one of those things that people:
 
-* Can see is problem.
+* Can see is a problem.
 * Don't particularly like the proposed solution.
 * Don't think the problem is a serious enough one to add this solution to the language.
 
