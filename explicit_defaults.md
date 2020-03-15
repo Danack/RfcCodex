@@ -31,7 +31,7 @@ function echo_repeat_with_glue(string $string, int $count = 3, string $append = 
     }
 }
 
-echo_repeat("cells interlinked within", 3, "\n");
+echo_repeat_with_glue("cells interlinked within", 3, "\n");
 ```
 
 In this example, when reading the code, it is not possible to tell if the calling code:
