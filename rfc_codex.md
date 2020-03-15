@@ -14,6 +14,8 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Enums](https://github.com/Danack/RfcCodex/blob/master/enums.md)
 
+[Explicit defaults](https://github.com/Danack/RfcCodex/blob/master/explicit_defaults.md)
+
 [Generics](https://github.com/Danack/RfcCodex/blob/master/generics.md)
 
 [Method overloading](https://github.com/Danack/RfcCodex/blob/master/method_overloading.md)
@@ -28,17 +30,19 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 Async
 
-Structs
+Null short-circuiting - https://wiki.php.net/rfc/nullsafe_calls
 
-Explicit defaults
+[Strings being terrible](https://github.com/Danack/RfcCodex/blob/master/strings_and_encodings.md)
+
+[Structs](https://github.com/Danack/RfcCodex/blob/master/structs.md)
+
+Strong typing
 
 Tuple returns
 
-Null short-circuiting - https://wiki.php.net/rfc/nullsafe_calls
-
 Type declarations `type number = float | int;`
 
-Strong typing 
+ 
 
 ```
 class RetryLimit extends int {

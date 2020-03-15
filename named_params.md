@@ -1,6 +1,6 @@
-# Structs 
+# Named params
 
-PRs welcome.
+PRs welcome! 
 
 ## General idea
 
