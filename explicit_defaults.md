@@ -25,7 +25,7 @@ But PHP only allows you to use defaults for trailing arguments. It is not possib
 ```
 <?php
   
-function echo_repeat_with_glue(string $string, int $count = 3, string $append) {
+function echo_repeat_with_glue(string $string, int $count = 3, string $append = " ") {
     for ($i = 0; $i < $count; $i += 1) {
         echo $string . $append;
     }
