@@ -1,5 +1,7 @@
 # Briefer closure syntax 
 
+Implemented in PHP 7.4, though only as single expressions, not multiple expressions.
+
 ## General idea
 
 Closures in PHP are quite verbose compared to those in other languages.

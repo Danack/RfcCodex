@@ -1,5 +1,7 @@
 # Union types
 
+Implemented in PHP 8.0
+
 ## General idea
 
 The function strpos approximately has the following signature:
