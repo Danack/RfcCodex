@@ -2,7 +2,7 @@
 
 ## General idea
 
-PHP allows you to define a function that has a default value, and the default value is used when the parameter is not passed to the function.
+PHP allows you to define a function with optional parameters, with a default value for that parameter, and the default value is used when the parameter is not passed to the function.
 
 ```
 <?php
@@ -21,7 +21,6 @@ echo_repeat("cells interlinked within");
 This works fine by itself. 
 
 But PHP only allows you to use defaults for trailing arguments. It is not possible to skip over an optional parameter if you want to set a later parameter.
-
 
 ```
 <?php
@@ -68,9 +67,7 @@ CreateWindowEx($foo, default, default, $bar, 0, 0, 100, 100, default, default, d
 
 One of the threads of the issue is that you can avoid needing to use defaults by creating an object to store the params, and passing that object instead. 
 
-
 Though, this is another example of why having a 'lighter weight' way of defining and using types in PHP compared to full PHP classes might be useful. So see also [structs](https://github.com/Danack/RfcCodex/blob/master/structs.md).
-
 
 (btw I personally don't think this is a great reason to reject the RFC. There will always be features that are safe to use in some ways, but can be (mis)used to write bad code.)
 
