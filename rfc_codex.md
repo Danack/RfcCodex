@@ -22,9 +22,12 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Standardise core library](https://github.com/Danack/RfcCodex/blob/master/standardise_core_library.md)
 
+[Strong typing]()
+
 [Ternary right associative](https://github.com/Danack/RfcCodex/blob/master/ternary_operator_right_associative.md)
 
-[Union types](https://github.com/Danack/RfcCodex/blob/master/union_types.md)
+
+
 
 ## TODO
 
@@ -36,7 +39,7 @@ Null short-circuiting - https://wiki.php.net/rfc/nullsafe_calls
 
 [Structs](https://github.com/Danack/RfcCodex/blob/master/structs.md)
 
-Strong typing
+
 
 Tuple returns
 
@@ -48,7 +51,6 @@ Type declarations `type number = float | int;`
 class RetryLimit extends int {
 
 }
-
 
 function foo(RetryLimit $rl) {
     
@@ -68,6 +70,8 @@ function foo(RetryLimit $rl) {
 [Co- and contra-variance](https://github.com/Danack/RfcCodex/blob/master/co_and_contra_variance.md)
 
 [Briefer closure syntax](https://github.com/Danack/RfcCodex/blob/master/briefer_closure_syntax.md)
+
+[Union types](https://github.com/Danack/RfcCodex/blob/master/union_types.md)
 
 
 ## Contributing
