@@ -20,14 +20,17 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Method overloading](https://github.com/Danack/RfcCodex/blob/master/method_overloading.md)
 
+[Named params](https://github.com/Danack/RfcCodex/blob/master/named_params.md)
+
 [Standardise core library](https://github.com/Danack/RfcCodex/blob/master/standardise_core_library.md)
 
-[Strong typing]()
+[Strings/encoding is terrible](https://github.com/Danack/RfcCodex/blob/master/strings_and_encodings.md)
+
+[Strong typing](https://github.com/Danack/RfcCodex/blob/master/strong_typing.md)
+
+[Structs](https://github.com/Danack/RfcCodex/blob/master/structs.md)
 
 [Ternary right associative](https://github.com/Danack/RfcCodex/blob/master/ternary_operator_right_associative.md)
-
-
-
 
 ## TODO
 
@@ -35,34 +38,9 @@ Async
 
 Null short-circuiting - https://wiki.php.net/rfc/nullsafe_calls
 
-[Strings being terrible](https://github.com/Danack/RfcCodex/blob/master/strings_and_encodings.md)
-
-[Structs](https://github.com/Danack/RfcCodex/blob/master/structs.md)
-
-
-
 Tuple returns
 
 Type declarations `type number = float | int;`
-
- 
-
-```
-class RetryLimit extends int {
-
-}
-
-function foo(RetryLimit $rl) {
-    
-    for ($i = 0; $i < $rl ; $i += 1) {
-        if(bar()) {
-            break;        
-        }
-    } 
-}
-
-
-```
 
 
 # Ideas that overcame their challenges
