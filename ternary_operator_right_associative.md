@@ -2,6 +2,8 @@
 
 ## General idea
 
+Note please see the <a href='#forecast'>forecast</a>.
+
 Quoting from [phpsadness](http://phpsadness.com/sad/30):
 
 (In PHP) the ternary operator is left-associative and therefore behaves entirely 'incorrectly':
@@ -87,14 +89,15 @@ else if ($hasBeenReserved) {
 }
 ```
 
-
 ## Forecast
 
-Quite unlikely to happen without a cunning plan.
+---Quite unlikely to happen without a cunning plan.---
 
-About the only way this could be addressed would be to use a new symbol for a right associative ternary operator.
+---About the only way this could be addressed would be to use a new symbol for a right associative ternary operator.---
 
-To keep the similarity with the current question mark `?`, an inverted question mark `¿` could be used. /s
+---To keep the similarity with the current question mark `?`, an inverted question mark `¿` could be used. /s---
+
+From PHP 7.4 [ternaries require parentheses](https://wiki.php.net/rfc/ternary_associativity) to set the correct order. This would allow us to implement them to be right associative by default if we wanted to.
 
 
 ## Notes
