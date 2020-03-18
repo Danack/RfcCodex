@@ -91,14 +91,13 @@ else if ($hasBeenReserved) {
 
 ## Forecast
 
----Quite unlikely to happen without a cunning plan.---
+<strike>Quite unlikely to happen without a cunning plan.</strike>
 
----About the only way this could be addressed would be to use a new symbol for a right associative ternary operator.---
+<strike>About the only way this could be addressed would be to use a new symbol for a right associative ternary operator.</strike>
 
----To keep the similarity with the current question mark `?`, an inverted question mark `¿` could be used. /s---
+<strike>To keep the similarity with the current question mark `?`, an inverted question mark `¿` could be used. /s</strike>
 
 From PHP 7.4 [ternaries require parentheses](https://wiki.php.net/rfc/ternary_associativity) to set the correct order. This would allow us to implement them to be right associative by default if we wanted to.
-
 
 ## Notes
 
