@@ -36,6 +36,8 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 Async
 
+Function interfaces - https://wiki.php.net/rfc/functional-interfaces
+
 Null short-circuiting - https://wiki.php.net/rfc/nullsafe_calls
 
 Tuple returns
