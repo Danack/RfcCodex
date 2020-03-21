@@ -4,7 +4,7 @@ This guide seeks to help people understand the attitude the PHP internal partici
 
 It is written as my personal understanding of other people's priorities; which means that it is not guaranteed to be correct, and may become inaccurate over time as people's view change.
 
-Please note, they are they things people consider to evaluate the trade-offs. They are not hard or absolute rules.
+Please note, they are things people consider to evaluate the trade-offs. They are not hard or absolute rules.
 
 ## Things that make an RFC less likely to pass
 
