@@ -14,6 +14,8 @@ They are a particular problem where two libraries might want to have different s
 
 Application level ini settings are significantly less terrible (i.e. where one setting should be used across the entire application e.g. disabled functions) as they don't have the problem of different libraries needing different settings.
 
+Any RFC that introduces new ini settings (except as short term workarounds for BC) is likely to not have a good reception.
+
 ### Can be done in userland
 
 PHP is written in C. Maintaining C code is a lot harder than maintaining PHP code.
