@@ -66,6 +66,27 @@ The PHP language is not a perfect design. But internals would prefer to not make
 
 Although the [Allow function calls in constant expressions](https://wiki.php.net/rfc/calls_in_constant_expressions) clearly makes PHP be more powerful, it does so in a way that dramatically increases the number of edge-cases - in this case by allowing some, but not all functions to be used in const initializers.
 
+### Small ratio of reward to work involved and BC breaks. 
+
+There are some ideas that while they would make PHP better, don't justify doing the the work that would be involved to implement them, or the work the users of PHP would have to do to adapt to the backward-compatibility break; 
+
+This reason is one of the reasons that I haven't pursued the [Consistent Callables](
+https://wiki.php.net/rfc/consistent_callables) RFC. Although that RFC would make PHP better, it wouldn't be significantly better. 
+
+Instead being able to specify 'callable' signatures along the lines of:
+```
+typedef validateFn = function(string $item): bool;
+```
+
+Would provide a lot more value to PHP, as well as allow existing code to continue to work, until in a future version of PHP the whole callable type could be remove.
+
+See also the [Function interfaces](https://wiki.php.net/rfc/functional-interfaces) RFC.
+
+### Ideas that make code harder to reason about
+
+As part of the discussion around [Attributes](https://wiki.php.net/rfc/attributes_v2) some suggestions were made that the syntax could be made to be parser context sensitive.
+
+Make the behaviour of code be dependent on state is just a terrible idea. For any language.
 
 ## Things that make an RFC more likely to pass
 
@@ -73,14 +94,20 @@ Although the [Allow function calls in constant expressions](https://wiki.php.net
 
 PHP internals values backwards compatibility more than other projects typically do. Where changes that break backwards compatibility need to happen, having a clear upgrade path from the current behaviour to the new behaviour makes it much more likely the RFC will be accepted.
 
-For example, for example for years, the behaviour of [ternary operator associativity](http://phpsadness.com/sad/30) was a source of sadness.
+This is a large topic, but two examples are:
+
+#### Spreading BC breaks over multiple versions
+
+For years, the behaviour of [ternary operator associativity](http://phpsadness.com/sad/30) was a source of sadness.
 
 > The ternary operator is left-associative and therefore behaves entirely incorrectly
-
 
 Rather than trying to fix this in one step, the [Deprecate left-associative ternary operator](https://wiki.php.net/rfc/ternary_associativity) RFC made it so that using nested ternaries without explicit parentheses will throw a deprecation warning.
 
 This means that in a future version of PHP, we could drop the requirement for parentheses and allow for the default behaviour to be right-associative (aka what people expect).
+
+
+#### 
 
 
 ### Being written clearly 
