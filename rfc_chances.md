@@ -70,7 +70,7 @@ Although the [Allow function calls in constant expressions](https://wiki.php.net
 
 There are some ideas that while they would make PHP better, don't justify doing the the work that would be involved to implement them, or the work the users of PHP would have to do to adapt to the backward-compatibility break; 
 
-This reason is one of the reasons that I haven't pursued the [Consistent Callables](
+This is the main reason that I haven't pursued the [Consistent Callables](
 https://wiki.php.net/rfc/consistent_callables) RFC. Although that RFC would make PHP better, it wouldn't be significantly better. 
 
 Instead being able to specify 'callable' signatures along the lines of:
@@ -132,3 +132,15 @@ Putting it simply, an RFC needs to explain why an idea is the right one, rather 
 If this is done well, it will limit how many alternative suggestions people suggest, as well as make people more comfortable adding to core, where it will need to be maintained for many years. 
 
 
+## Why I wrote this document
+
+PHP is a language that is evolving, and so the view people have on an idea will also evolve over time. A good example of this is the attitude towards union types.
+
+The RFC [Union types](https://wiki.php.net/rfc/union_types) in 2015 failed 11 - 18.
+
+The RFC [Union types v2](https://wiki.php.net/rfc/union_types_v2) in 2019 passed 61 - 5.
+
+I believe a large part of the change in attitude was that people had grown more used to working with scalar types, and using static analysis tools like PHPStan, Psalm and Phan. That led to people being better able to understand that union types solved a problem in a good way.
+
+Being able to understand how other people think greatly increases the chances that you can have a productive conversation with them, and so greatly increases the chances we can continually improve the language.
+ 
