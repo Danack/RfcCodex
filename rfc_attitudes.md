@@ -1,4 +1,4 @@
-# RFC chances guide 
+# Understanding RFC attitudes 
 
 This guide seeks to help people understand the attitude the PHP internal participants take when evaluating RFCs, and what factors are likely to make RFCs be less or more likely to pass.
 
