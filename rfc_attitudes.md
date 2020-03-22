@@ -80,7 +80,7 @@ Instead being able to specify 'callable' signatures along the lines of:
 typedef validateFn = function(string $item): bool;
 ```
 
-Would provide a lot more value to PHP, as well as allow existing code to continue to work, until in a future version of PHP the whole callable type could be remove.
+Would provide a lot more value to PHP, as well as allow existing code to continue to work, until in a future version of PHP the whole callable type could be removed.
 
 See also the [Function interfaces](https://wiki.php.net/rfc/functional-interfaces) RFC.
 
