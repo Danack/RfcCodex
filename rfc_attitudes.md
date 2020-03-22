@@ -40,7 +40,7 @@ Some RFCs have suggested introducing a new syntax to solve a particular problem.
 
 Adding new syntax in this way does not seem a good approach to language design.
 
-Rather than introducing the new syntax to be used for a small RFC, it would be better to introduce the new syntax as it's own RFC, so that all the use cases of that syntax can be though through, and then show how it could be used for the specific RFCs.  
+Rather than introducing the new syntax to be used for a small RFC, it would be better to introduce the new syntax as its own RFC, so that all the use cases of that syntax can be thought through, and then show how it could be used for the specific RFCs.  
 
 For example, the [named parameters](https://wiki.php.net/rfc/named_params) introduces new syntax but does it in a way that fully thinks through that syntax, and how it would interact with existing PHP code. 
 
@@ -66,7 +66,7 @@ For example, [Method Overloading](https://github.com/Danack/RfcCodex/blob/master
 
 The PHP language is not a perfect design. But internals would prefer to not make the language any worse by adding features that have many edge-cases.
 
-Although the [Allow function calls in constant expressions](https://wiki.php.net/rfc/calls_in_constant_expressions) clearly makes PHP be more powerful, it does so in a way that dramatically increases the number of edge-cases - in this case by allowing some, but not all functions to be used in const initializers.
+Although the [Allow function calls in constant expressions](https://wiki.php.net/rfc/calls_in_constant_expressions) clearly makes PHP more powerful, it does so in a way that dramatically increases the number of edge-cases - in this case by allowing some, but not all functions to be used in const initializers.
 
 ### Small ratio of reward to work involved and BC breaks. 
 
@@ -80,7 +80,7 @@ Instead being able to specify 'callable' signatures along the lines of:
 typedef validateFn = function(string $item): bool;
 ```
 
-Would provide a lot more value to PHP, as well as allow existing code to continue to work, until in a future version of PHP the whole callable type could be remove.
+Would provide a lot more value to PHP, as well as allow existing code to continue to work, until in a future version of PHP the whole callable type could be removed.
 
 See also the [Function interfaces](https://wiki.php.net/rfc/functional-interfaces) RFC.
 
@@ -136,13 +136,12 @@ If this is done well, it will limit how many alternative suggestions people sugg
 
 ## Why I wrote this document
 
-PHP is a language that is evolving, and so the view people have on an idea will also evolve over time. A good example of this is the attitude towards union types.
+PHP is a language that is evolving, and so how people view an idea will also evolve over time. A good example of this is the attitude towards union types.
 
 The RFC [Union types](https://wiki.php.net/rfc/union_types) in 2015 failed 11 - 18.
 
 The RFC [Union types v2](https://wiki.php.net/rfc/union_types_v2) in 2019 passed 61 - 5.
 
-I believe a large part of the change in attitude was that people had grown more used to working with scalar types, and using static analysis tools like PHPStan, Psalm and Phan. That led to people being better able to understand that union types solved a problem in a good way.
+I believe a large part of the change in attitude was that people had grown more used to working with scalar types, and using static analysis tools like PHPStan, Psalm and Phan. That experience made it easier for people to understand that union types solved a problem in a good way.
 
 Being able to understand how other people think greatly increases the chances that you can have a productive conversation with them, and so greatly increases the chances we can continually improve the language.
- 
