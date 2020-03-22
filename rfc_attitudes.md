@@ -70,7 +70,7 @@ Although the [Allow function calls in constant expressions](https://wiki.php.net
 
 ### Small ratio of reward to work involved and BC breaks. 
 
-There are some ideas that while they would make PHP better, don't justify doing the the work that would be involved to implement them, or the work the users of PHP would have to do to adapt to the backward-compatibility break; 
+There are some ideas that while they would make PHP better, don't justify doing the the work that would be involved to implement them, or the work the users of PHP would have to do to adapt to the backward-compatibility break.
 
 This is the main reason that I haven't pursued the [Consistent Callables](
 https://wiki.php.net/rfc/consistent_callables) RFC. Although that RFC would make PHP better, it wouldn't be significantly better. 
