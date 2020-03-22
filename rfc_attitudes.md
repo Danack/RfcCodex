@@ -136,7 +136,7 @@ If this is done well, it will limit how many alternative suggestions people sugg
 
 ## Why I wrote this document
 
-PHP is a language that is evolving, and so the view people have on an idea will also evolve over time. A good example of this is the attitude towards union types.
+PHP is a language that is evolving, and so how people will view an idea will also evolve over time. A good example of this is the attitude towards union types.
 
 The RFC [Union types](https://wiki.php.net/rfc/union_types) in 2015 failed 11 - 18.
 
