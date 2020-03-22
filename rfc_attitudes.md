@@ -94,7 +94,7 @@ Make the behaviour of code be dependent on state is just a terrible idea. For an
 
 ### Clear upgrade path
 
-PHP internals values backwards compatibility more than other projects typically do. Where changes that break backwards compatibility need to happen, having a clear upgrade path from the current behaviour to the new behaviour makes it much more likely the RFC will be accepted.
+PHP internals values backwards compatibility more than other projects typically do. Changes that break backwards compatibility but need to happen, and have a clear upgrade path from the current behaviour to the new behaviour makes it much more likely the RFC will be accepted.
 
 This is a large topic, but two examples are:
 
