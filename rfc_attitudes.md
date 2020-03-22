@@ -66,7 +66,7 @@ For example, [Method Overloading](https://github.com/Danack/RfcCodex/blob/master
 
 The PHP language is not a perfect design. But internals would prefer to not make the language any worse by adding features that have many edge-cases.
 
-Although the [Allow function calls in constant expressions](https://wiki.php.net/rfc/calls_in_constant_expressions) clearly makes PHP be more powerful, it does so in a way that dramatically increases the number of edge-cases - in this case by allowing some, but not all functions to be used in const initializers.
+Although the [Allow function calls in constant expressions](https://wiki.php.net/rfc/calls_in_constant_expressions) clearly makes PHP more powerful, it does so in a way that dramatically increases the number of edge-cases - in this case by allowing some, but not all functions to be used in const initializers.
 
 ### Small ratio of reward to work involved and BC breaks. 
 
