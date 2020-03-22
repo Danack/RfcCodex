@@ -142,7 +142,7 @@ The RFC [Union types](https://wiki.php.net/rfc/union_types) in 2015 failed 11 - 
 
 The RFC [Union types v2](https://wiki.php.net/rfc/union_types_v2) in 2019 passed 61 - 5.
 
-I believe a large part of the change in attitude was that people had grown more used to working with scalar types, and using static analysis tools like PHPStan, Psalm and Phan. That led to people being better able to understand that union types solved a problem in a good way.
+I believe a large part of the change in attitude was that people had grown more used to working with scalar types, and using static analysis tools like PHPStan, Psalm and Phan. That led to people understanding that union types solved a problem in a good way.
 
 Being able to understand how other people think greatly increases the chances that you can have a productive conversation with them, and so greatly increases the chances we can continually improve the language.
  
