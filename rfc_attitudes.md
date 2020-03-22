@@ -40,7 +40,7 @@ Some RFCs have suggested introducing a new syntax to solve a particular problem.
 
 Adding new syntax in this way does not seem a good approach to language design.
 
-Rather than introducing the new syntax to be used for a small RFC, it would be better to introduce the new syntax as it's own RFC, so that all the use cases of that syntax can be though through, and then show how it could be used for the specific RFCs.  
+Rather than introducing the new syntax to be used for a small RFC, it would be better to introduce the new syntax as its own RFC, so that all the use cases of that syntax can be thought through, and then show how it could be used for the specific RFCs.  
 
 For example, the [named parameters](https://wiki.php.net/rfc/named_params) introduces new syntax but does it in a way that fully thinks through that syntax, and how it would interact with existing PHP code. 
 
