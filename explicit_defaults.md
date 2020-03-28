@@ -100,6 +100,27 @@ Anyway, I thought the previous RFC was going to pass so what do I know?
 
 # Notes
 
+## Alternative idea
+
+Union types are present for PHP 8. The default could be implemented if we added the ability to define a union of a built-in type and a scalar:
+
+```
+function sayHello(string $name, string|"Greetings" $salution) {
+    echo $salution . " " . $name;
+}
+
+sayHello('Jane'); 
+// Output is 'Greetings Jane'
+
+sayHello('John', "Hello");
+// Output is 'Hello John'
+```
+
+Though is a bit of a hack.
+
+
+## Previous RFC
+
 [Skipparams RFC](https://wiki.php.net/rfc/skipparams) 
 
 

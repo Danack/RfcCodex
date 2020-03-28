@@ -32,18 +32,19 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Ternary right associative](https://github.com/Danack/RfcCodex/blob/master/ternary_operator_right_associative.md)
 
+[Typedef callable signatures](https://github.com/Danack/RfcCodex/blob/master/typedef_callables.md)
+
 ## TODO
 
-Async
+These need to be summarised.
 
-Function interfaces - https://wiki.php.net/rfc/functional-interfaces
+Async
 
 Null short-circuiting - https://wiki.php.net/rfc/nullsafe_calls
 
 Tuple returns
 
 Type declarations `type number = float | int;`
-
 
 # Ideas that overcame their challenges
 
