@@ -32,7 +32,7 @@ Because of those reasons, any RFC that could be implemented in userland (e.g. [S
 
 ### Bespoke syntax
 
-Some RFCs have suggested introducing a new syntax to solve a particular problem.
+Some RFCs have suggested introducing a new syntax to solve a relatively small problem.
 
 * [Compact Object Property Assignment](https://wiki.php.net/rfc/compact-object-property-assignment)
 
@@ -86,9 +86,44 @@ See also the [Function interfaces](https://wiki.php.net/rfc/functional-interface
 
 ### Ideas that make code harder to reason about
 
-As part of the discussion around [Attributes](https://wiki.php.net/rfc/attributes_v2) some suggestions were made that the syntax could be made to be parser context sensitive.
+One of the strengths of PHP is that code written in it is usually reasonably easy to understand. For example the Doctrine ORM is written in PHP, so that if you ever encounter unexpected behaviour in it, you can debug the PHP code yourself.
 
-Make the behaviour of code be dependent on state is just a terrible idea. For any language.
+That is much better than Java's Hibernate ORM, where sometimes unexpected behaviour happens at [the VM level](https://stackoverflow.com/a/10808563/778719) which is much harder to debug.
+
+Any RFC that makes code harder to reason about is less likely to be passed.
+
+
+### Reusing keywords
+
+This is an example of an existing choice in PHP being 'sub-optimal'. The static keyword in PHP can mean any of:
+
+* static method - a method that is bound to a class, not an instance of that class.
+
+* static property - a property that is bound to a class, not an instance of that class.
+
+* static variables - a local variable that persists across multiple calls to a function.
+
+* static closure - Skips binding `$this` to a [closure created within a class](https://www.exakat.io/5-usages-of-static-keyword-in-php/).
+
+* static classname - aka the late static binding classname
+
+Which is approximately three meanings too many.
+
+### Context dependent parsing
+
+As part of the discussion around [Attributes](https://wiki.php.net/rfc/attributes_v2) some suggestions were made that the syntax could be made to be parser context sensitive to avoid the problem of the @ character already having meaning in PHP e.g. something like:
+
+```
+@bar(123)
+function foo()
+{
+    @bar(123);
+}
+```
+ 
+where `@bar(...)` immediately before a function declaration is an annotation, leaving `@bar(...)` inside a function as a silenced function call. This context dependent meaning is confusing.
+
+
 
 ## Things that make an RFC more likely to pass
 
