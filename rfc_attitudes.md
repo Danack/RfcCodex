@@ -90,7 +90,7 @@ One of the strengths of PHP is that code written in it is usually reasonably eas
 
 That is much better than Java's Hibernate ORM, where sometimes unexpected behaviour happens at [the VM level](https://stackoverflow.com/a/10808563/778719) which is much harder to debug.
 
-Any RFC that makes code harder to reason about is less likely to be passed.
+Any RFC that makes code harder to reason about is less likely to be passed. Two examples of this issue are reusing keywords, and context dependent parsing.
 
 
 #### Reusing keywords
@@ -121,7 +121,7 @@ function foo()
 }
 ```
  
-where `@bar(...)` immediately before a function declaration is an annotation, leaving `@bar(...)` inside a function as a silenced function call. This context dependent meaning is confusing.
+where `@bar(...)` immediately before a function declaration would be parsed as an annotation, and `@bar(...)` inside a function would be parsed as a silenced function call. This context dependent meaning is confusing.
 
 
 
