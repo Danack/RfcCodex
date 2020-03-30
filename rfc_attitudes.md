@@ -93,7 +93,7 @@ That is much better than Java's Hibernate ORM, where sometimes unexpected behavi
 Any RFC that makes code harder to reason about is less likely to be passed.
 
 
-### Reusing keywords
+#### Reusing keywords
 
 This is an example of an existing choice in PHP being 'sub-optimal'. The static keyword in PHP can mean any of:
 
@@ -109,7 +109,7 @@ This is an example of an existing choice in PHP being 'sub-optimal'. The static 
 
 Which is approximately three meanings too many.
 
-### Context dependent parsing
+#### Context dependent parsing
 
 As part of the discussion around [Attributes](https://wiki.php.net/rfc/attributes_v2) some suggestions were made that the syntax could be made to be parser context sensitive to avoid the problem of the @ character already having meaning in PHP e.g. something like:
 
