@@ -40,7 +40,11 @@ These need to be summarised.
 
 Async
 
+Ini settings - why app level settings are kind of okay, but library level ones are bad.
+
 Null short-circuiting - https://wiki.php.net/rfc/nullsafe_calls
+
+Pipe-operator - https://wiki.php.net/rfc/pipe-operator
 
 Tuple returns
 

@@ -70,7 +70,7 @@ Although the [Allow function calls in constant expressions](https://wiki.php.net
 
 ### Small ratio of reward to work involved and BC breaks. 
 
-There are some ideas that while they would make PHP better, don't justify doing the the work that would be involved to implement them, or the work the users of PHP would have to do to adapt to the backward-compatibility break.
+There are some ideas that while they would definitely make PHP better, but currently don't justify doing the the work that would be involved to implement them, or the work the users of PHP would have to do to adapt to the backward-compatibility break.
 
 This is the main reason that I haven't pursued the [Consistent Callables](
 https://wiki.php.net/rfc/consistent_callables) RFC. Although that RFC would make PHP better, it wouldn't be significantly better. 
@@ -83,6 +83,16 @@ typedef validateFn = function(string $item): bool;
 Would provide a lot more value to PHP, as well as allow existing code to continue to work, until in a future version of PHP the whole callable type could be removed.
 
 See also the [Function interfaces](https://wiki.php.net/rfc/functional-interfaces) RFC.
+
+### Non beneficial changes
+
+Similar to the attitude of 'small ratio of reward to work', there is a separate phenomenon where the current maintainers think that the RFC provides no value, so no matter how little work it is, they still don't want to make that change.
+
+Some of the examples of this were:
+
+ * Deprecating {} for strings and arrays.
+ * Short PHP tags.
+ * Scalar types.
 
 ### Ideas that make code harder to reason about
 
@@ -143,9 +153,7 @@ Rather than trying to fix this in one step, the [Deprecate left-associative tern
 
 This means that in a future version of PHP, we could drop the requirement for parentheses and allow for the default behaviour to be right-associative (aka what people expect).
 
-
 #### 
-
 
 ### Being written clearly 
 
