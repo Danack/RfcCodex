@@ -6,7 +6,9 @@ It is written as my personal understanding of other people's priorities; which m
 
 Please note, they are things people consider to evaluate the trade-offs. They are not hard or absolute rules.
 
-## Things that make an RFC less likely to pass
+The aim of this guide is to make it easier to understand the arguments people are going to make either in favour or against the RFC. Hopefully this will make it easier to write RFCs that address people's concerns and so lead to more productive conversations.
+
+## Things people will consider as reasons to vote against an RFC
 
 ### Adding ini options
 
@@ -135,7 +137,28 @@ where `@bar(...)` immediately before a function declaration would be parsed as a
 
 
 
-## Things that make an RFC more likely to pass
+### Not being compatible with the PHP release schedule
+
+PHP doesn't not strictly follow semver, but the project does attempt to minimise semver violations.
+
+This restriction on releases makes including libraries that would need a different release schedule be a logistical nightmare. Here are two examples.
+
+#### New libraries that have rapidly a evolving API 
+
+Most new libraries go through initial periods where the API is evolving rapidly. Later, when the library has matured the API will naturally change less frequently.
+
+As a API change is either a minor or major BC break, this means either the library will evolve very slowly, or there will be unexpected BC breaks in each version of PHP. Neither situation is good.
+
+It is much better for new libraries to be shipped separately from core. Though we also need to make it easier for people to install extensions...
+
+#### Imagick extension
+
+The Imagick extension is a relatively thin wrapper around the ImageMagick library. The ImagickMagick library does not follow semver.
+
+The version numbers for ImageMagick look like "7.0.10-3", which is "major.minor.bugfix-patch_number". However there are sometimes BC breaks in minor versions, and also BC breaks between patch versions. Trying to handle these changes in a way that is compatible with PHP's release schedule would be a very complicated thing to do.
+
+
+## Things people will consider as reasons to vote for an RFC
 
 ### Clear upgrade path
 
