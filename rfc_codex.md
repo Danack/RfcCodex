@@ -24,7 +24,7 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Standardise core library](https://github.com/Danack/RfcCodex/blob/master/standardise_core_library.md)
 
-[Strings/encoding is terrible](https://github.com/Danack/RfcCodex/blob/master/strings_and_encodings.md)
+[Strings/encoding is terrible](https://github.com/Danack/RfcCodex/blob/master/strings_and_encoding.md)
 
 [Strong typing](https://github.com/Danack/RfcCodex/blob/master/strong_typing.md)
 
