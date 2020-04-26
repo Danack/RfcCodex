@@ -32,6 +32,10 @@ class Coordinate3d {
     public function getZ() {
         return $this->z;
     }
+
+    public function getDistanceFromOrigin(): float {
+        return sqrt($this->x * $this->x + $this->y * $this->y + $this->z * $this->z);
+    }
 }
 
 
@@ -46,6 +50,12 @@ struct Coordinate3d {
     int $x;
     int $y;
     int $z;
+
+
+    public function getDistanceFromOrigin(): float {
+        return sqrt($this->x * $this->x + $this->y * $this->y + $this->z * $this->z);
+    }
+
 }
 ```
 
