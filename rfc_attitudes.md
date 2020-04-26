@@ -86,7 +86,7 @@ Would provide a lot more value to PHP, as well as allow existing code to continu
 
 See also the [Function interfaces](https://wiki.php.net/rfc/functional-interfaces) RFC.
 
-### Non beneficial changes
+### Non-beneficial changes
 
 Similar to the attitude of 'small ratio of reward to work', there is a separate phenomenon where the current maintainers think that the RFC provides no value, so no matter how little work it is, they still don't want to make that change.
 
@@ -95,6 +95,7 @@ Some of the examples of this were:
  * Deprecating {} for strings and arrays.
  * Short PHP tags.
  * Scalar types.
+ * Using a top level namespace for core PHP functions (other than that strongly couple to the engine related). 
 
 ### Ideas that make code harder to reason about
 
