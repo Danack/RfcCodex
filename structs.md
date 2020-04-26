@@ -73,7 +73,7 @@ function foo(Coordinate3d $coord) {
 
 ```
 
-#### Checks properties for being set
+#### Checks properties are set during construction
 
 ```
 struct Coordinate3d {
@@ -89,17 +89,18 @@ $coord = new Coordinate3d([x=1, y=2]);
 
 This might not be compatible with having 'circular' data structures (where A uses B, B uses C, C uses A} as none of them could be fully constructed first before being used by the next.
 
-#### No inheritance?
-
-Theoretically that could be large performance gain compared to classes. TODO get someone who knows to comment.
-
-
 #### Rust-like cloning
 
 ```
 $startPosition = new Coordinate3d([x=1, y=2, z=3]);
 $endPosition = new Coordinate3d([x=7, ...$startPosition]);
 ```
+
+
+#### No inheritance?
+
+Theoretically that could be large performance gain compared to classes. TODO get someone who knows to comment.
+
 
 #### No __set, __get, __call(), __callStatic(), __isset() support
 
@@ -113,7 +114,7 @@ No doubt, everyone will have an opinion on the syntax to be chosen.
 
 ## Forecast
 
-Dunno. 
+Having named parameters first for the cloning syntax would make this idea easier. 
 
 ## Notes
 
