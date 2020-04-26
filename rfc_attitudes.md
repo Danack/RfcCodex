@@ -95,7 +95,7 @@ Some of the examples of this were:
  * Deprecating {} for strings and arrays.
  * Short PHP tags.
  * Scalar types.
- * Using a top level namespace for core PHP functions (other than that strongly couple to the engine related). 
+ * Using a top level namespace for core PHP functions (other than for code strongly coupled to the PHP engine). 
 
 ### Ideas that make code harder to reason about
 
