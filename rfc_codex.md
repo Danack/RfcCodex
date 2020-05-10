@@ -22,6 +22,8 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Named params](https://github.com/Danack/RfcCodex/blob/master/named_params.md)
 
+[Referencing functions](https://github.com/Danack/RfcCodex/blob/master/referencing_functions.md)
+
 [Standardise core library](https://github.com/Danack/RfcCodex/blob/master/standardise_core_library.md)
 
 [Strings/encoding is terrible](https://github.com/Danack/RfcCodex/blob/master/strings_and_encoding.md)
