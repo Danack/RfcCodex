@@ -52,7 +52,7 @@ Tuple returns
 
 Type declarations `type number = float | int;`
 
-# Ideas that overcame their challenges
+## Ideas that overcame their challenges
 
 [Co- and contra-variance](https://github.com/Danack/RfcCodex/blob/master/co_and_contra_variance.md)
 
@@ -60,6 +60,10 @@ Type declarations `type number = float | int;`
 
 [Union types](https://github.com/Danack/RfcCodex/blob/master/union_types.md)
 
+
+# Misc notes
+
+[SPL notes](https://github.com/Danack/RfcCodex/blob/master/spl_summary.md)
 
 ## Contributing
 
