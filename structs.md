@@ -128,3 +128,5 @@ Having named parameters first for the cloning syntax would make this idea easier
 
 ## Notes
 
+
+Similar to Hacklang shapes - https://docs.hhvm.com/hack/built-in-types/shapes
