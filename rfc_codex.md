@@ -8,6 +8,8 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Annotations](https://github.com/Danack/RfcCodex/blob/master/annotations.md)
 
+[Better web sapi](https://github.com/Danack/RfcCodex/blob/master/better_web_sapi.md)
+
 [Class scoping improvements](https://github.com/Danack/RfcCodex/blob/master/class_scoping_improvements.md)
 
 [Consistent callables](https://github.com/Danack/RfcCodex/blob/master/consistent_callables.md)
@@ -21,6 +23,8 @@ The purpose of these documents is to avoid information from being lost and to tr
 [Method overloading](https://github.com/Danack/RfcCodex/blob/master/method_overloading.md)
 
 [Named params](https://github.com/Danack/RfcCodex/blob/master/named_params.md)
+
+[Out parameters](https://github.com/Danack/RfcCodex/blob/master/out_parameters.md)
 
 [Referencing functions](https://github.com/Danack/RfcCodex/blob/master/referencing_functions.md)
 
@@ -42,13 +46,11 @@ These need to be summarised.
 
 Async
 
-Ini settings - why app level settings are kind of okay, but library level ones are bad.
-
 Null short-circuiting - https://wiki.php.net/rfc/nullsafe_calls
 
 Pipe-operator - https://wiki.php.net/rfc/pipe-operator
 
-Tuple returns
+Tuple returns - though these would be moot if we had [out parameters](https://github.com/Danack/RfcCodex/blob/master/out_parameters.md).
 
 Type declarations `type number = float | int;`
 

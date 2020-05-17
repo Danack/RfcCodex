@@ -63,6 +63,8 @@ I have no idea which would be better.
 
 Probably some horrible edge-cases around type juggling and calling weak mode code from strict, string from weak, and internals calling a callable that was defined in a strict file. 
 
+### Compatibility with named params
+
 ## Forecast
 
 Quite likely to happen one day. Mostly needs someone to spend the time on it.
