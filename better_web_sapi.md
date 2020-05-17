@@ -93,7 +93,7 @@ There would naturally be some reluctance to bring another SAPI into core.
 
 ## Forecast
 
-¯\_(ツ)_/¯
+¯\\_(ツ)_/¯
 
 Could possibly be done with Golang as the process manager. Though that would raise interesting questions about where opcache would live, and how code that is already in opcache would be passed to the spawned worker processes.
 
