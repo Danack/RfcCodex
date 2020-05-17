@@ -26,7 +26,7 @@ Although that works, you have to go off and read the comment for the function to
 ```
 <?php
 
-function calculateDimensions($inputValue : int $width, $height) {
+function calculateDimensions(int $inputValue, out int $width, out int $height) {
     // do some maths.
     
     $width = 5;
@@ -48,13 +48,12 @@ Wikipedia [definition](https://en.wikipedia.org/wiki/Parameter_(computer_program
 
 Someone needs to sit down and do the work to think through how it should work, and think through what is an appropriate syntax.
 
-
 ### Syntax 
 
 Random list of possibilities:
 
 * in/out keywords
-* Copying the TScript idea of having a separate in the parameter list
+* Copying the TScript idea of having a separator in the parameter list
 * In place of the return type.
 
 I have no idea which would be better.
@@ -68,7 +67,6 @@ Probably some horrible edge-cases around type juggling and calling weak mode cod
 ## Forecast
 
 Quite likely to happen one day. Mostly needs someone to spend the time on it.
-
 
 ## Notes
 
