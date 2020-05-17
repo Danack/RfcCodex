@@ -60,6 +60,23 @@ variables are permitted");
 }
 ```
 
+### Request field mangling
+
+For reasons, post fields are mangled in PHP.
+ 
+```
+    "a.b" => $_REQUEST["a_b"]
+    "a b" => $_REQUEST["a_b"]
+    "a[b" => $_REQUEST["a_b"]
+    "a]b" => $_REQUEST["a]b"]
+    "a-b" => $_REQUEST["a-b"]
+    "a/b" => $_REQUEST["a/b"]
+    "a\b" => $_REQUEST["a\b"]
+    "a,b" => $_REQUEST["a,b"]
+```
+
+Lets not do that.
+
 #### urlencode vs rawurlencode
 
 This might not be an issue given the refactoring of the magic globals.
