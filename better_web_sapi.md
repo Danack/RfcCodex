@@ -4,7 +4,6 @@
 
 Although it functions, the FPM sapi is not fantastic, and has a couple of major limitations, that make using PHP much more difficult than it needs to be.
 
-
 ## Details 
 
 ### Per project ini files and extensions
@@ -27,7 +26,9 @@ The code for handling ini files inside the FPM sapi is definitely not good. That
 
 ### function and behaviour cleanup
 
-There are a reasonable number of things that were done in PHP which were good at the time, but are less good now
+There are a reasonable number of things that were done in PHP which were good at the time, but are less good now.
+
+Some of them could be cleaned up just for the sake of having the sapi be simpler. Others should be cleaned up to remove hacks/magic that are contained within them.
 
 #### Remove request super-globals
 
@@ -49,7 +50,6 @@ The other ones are not fine:
 https://externals.io/message/110062
 
 For those not familiar with this ini setting, it defines a maximum number of input vars in either $_GET, $_POST or $_COOKIE. Additional variables are discarded. This is a good idea to avoid attacks sending lots of data, but the program has no way of knowing it’s working with a truncated $_POST, $_GET or $_COOKIE.
-
 
 ```php
 $max = ini_get("max_input_vars") - 1;
@@ -84,6 +84,36 @@ This might not be an issue given the refactoring of the magic globals.
 https://www.gyrocode.com/articles/php-urlencode-vs-rawurlencode/
 
 
+
+#### Ini settings that can have error conditions
+
+Currently all the error conditions for things like "post content-length exceeded", "file upload size exceeded", "max input time" have bad developer experience.
+
+https://bugs.php.net/bug.php?id=54948
+https://bugs.php.net/bug.php?id=41977
+https://bugs.php.net/bug.php?id=63875
+
+On of the bugs suggests doing something like:
+
+```
+get_startup_errors();
+
+that returns something like this:
+[
+    [
+        'message' => 'Post content data limit excedeed'
+        'errType' => STARTUP_ERR_PARTIAL_POST
+    ],   
+    [
+        'message' => "Module 'ssh2' blah blah blah",
+        'startupErrType' => STARTUP_ERR_SERVER
+    ]
+]
+```
+
+Also "post_max_size exceeded. post_max_size just clears all data when overflowing"
+
+
 ### Better pool management
 
 Currently the pools can only be managed through config files. It would be quite convenient to be able to set things like pool sizes dynamically, either internally through PHP code, or externally through an API.
@@ -97,6 +127,18 @@ There are a couple of places where PHP-FPM has bad behaviour around crashes. Alt
 
 Currently in PHP-FPM, there are scenarios where an extension fails to be loaded correctly, which results in the pool not coming up correctly. This spams the error log with megabytes of data per minute, but otherwise provides no other info about what is happening.
 
+
+### Other ini settings
+
+There are a resonable number of ini settings that could be removed.
+
+* user_dir
+* variables_order
+* request_order
+* auto_append_file
+* auto_prepend_file
+
+There needs to be a reason to keep them, other than 'why not'.
 
 ## Hurdles to overcome
 
