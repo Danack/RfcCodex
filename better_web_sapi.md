@@ -1,8 +1,8 @@
-# Better web sapi 
+# Better web SAPI 
 
 ## General idea
 
-Although it functions, the FPM sapi is not fantastic, and has a couple of major limitations, that make using PHP much more difficult than it needs to be.
+Although it functions, the FPM SAPI is not fantastic, and has a couple of major limitations, that make using PHP much more difficult than it needs to be.
 
 ## Details 
 
@@ -12,23 +12,23 @@ Even with containers being a thing, the way that PHP requires management of ini 
 
 One of the main problems with the Pickle idea was that currently PHP requires libraries to be installed into system directories, which means that www-data user cannot install them.
 
-A new web sapi that prefers to (or maybe only) loads ini files and extensions from the project directory it is in, would be easier to manage.
+A new web SAPI that prefers to (or maybe only) loads ini files and extensions from the project directory it is in, would be easier to manage.
 
 ### Process management cleanup
 
-Allegedly some of the code inside the FPM sapi that manages processes is written with some unsafe assumptions in it, which can lead to race-conditions.
+Allegedly some of the code inside the FPM SAPI that manages processes is written with some unsafe assumptions in it, which can lead to race-conditions.
 
 https://bugs.php.net/bug.php?id=65398
 
 ### ini file code cleanup
 
-The code for handling ini files inside the FPM sapi is definitely not good. That should probably be re-written from scratch. 
+The code for handling ini files inside the FPM SAPI is definitely not good. That should probably be re-written from scratch. 
 
 ### function and behaviour cleanup
 
 There are a reasonable number of things that were done in PHP which were good at the time, but are less good now.
 
-Some of them could be cleaned up just for the sake of having the sapi be simpler. Others should be cleaned up to remove hacks/magic that are contained within them.
+Some of them could be cleaned up just for the sake of having the SAPI be simpler. Others should be cleaned up to remove hacks/magic that are contained within them.
 
 #### Remove request super-globals
 
@@ -65,17 +65,17 @@ variables are permitted");
 For reasons, post fields are mangled in PHP.
  
 ```
-    "a.b" => $_REQUEST["a_b"]
-    "a b" => $_REQUEST["a_b"]
-    "a[b" => $_REQUEST["a_b"]
-    "a]b" => $_REQUEST["a]b"]
-    "a-b" => $_REQUEST["a-b"]
-    "a/b" => $_REQUEST["a/b"]
-    "a\b" => $_REQUEST["a\b"]
-    "a,b" => $_REQUEST["a,b"]
+"a.b" => $_REQUEST["a_b"]
+"a b" => $_REQUEST["a_b"]
+"a[b" => $_REQUEST["a_b"]
+"a]b" => $_REQUEST["a]b"]
+"a-b" => $_REQUEST["a-b"]
+"a/b" => $_REQUEST["a/b"]
+"a\b" => $_REQUEST["a\b"]
+"a,b" => $_REQUEST["a,b"]
 ```
 
-Lets not do that.
+Let's not do that.
 
 #### urlencode vs rawurlencode
 
@@ -97,11 +97,12 @@ On of the bugs suggests doing something like:
 
 ```
 get_startup_errors();
-
-that returns something like this:
+```
+that returns something like this:  
+```
 [
     [
-        'message' => 'Post content data limit excedeed'
+        'message' => 'Post content data limit exceeded'
         'errType' => STARTUP_ERR_PARTIAL_POST
     ],   
     [
@@ -130,7 +131,7 @@ Currently in PHP-FPM, there are scenarios where an extension fails to be loaded 
 
 ### Other ini settings
 
-There are a resonable number of ini settings that could be removed.
+There are a reasonable number of ini settings that could be removed.
 
 * user_dir
 * variables_order
@@ -146,7 +147,7 @@ There needs to be a reason to keep them, other than 'why not'.
 
 This would be a big task to implement.
 
-### Reticience to take on another sapi
+### Reticience to take on another SAPI
 
 There would naturally be some reluctance to bring another SAPI into core.
 
@@ -154,7 +155,7 @@ There would naturally be some reluctance to bring another SAPI into core.
 
 ¯\\\_(ツ)\_/¯
 
-Could possibly be done with Golang as the process manager. Though that would raise interesting questions about where opcache would live, and how code that is already in opcache would be passed to the spawned worker processes.
+Could possibly be done with Golang as the process manager. Although that would raise interesting questions about where opcache would live, and how code that is already in opcache would be passed to the spawned worker processes.
 
 ## Notes
 
