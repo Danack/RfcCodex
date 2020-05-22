@@ -20,7 +20,7 @@ function calculateDimensions($inputValue) {
 
 ```
 
-Although that works, you have to go off and read the comment for the function to that what it is returning, will actually match what you are expecting.
+Although that works, you have to go off and read the comment for the function to see what it is returning, and that it actually matches what you are expecting.
 
 
 ```php
