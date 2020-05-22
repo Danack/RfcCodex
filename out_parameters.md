@@ -7,7 +7,7 @@ Any function that needs to return multiple values is currently a little bit hard
 
 Although it's possible to define functions that returns a 'tuple', enforcing type correctness and even just having your IDE understand what the code is doing is harder e.g. 
 
-```
+```php
 <?php
 
 function calculateDimensions($inputValue) {
@@ -23,7 +23,7 @@ function calculateDimensions($inputValue) {
 Although that works, you have to go off and read the comment for the function to that what it is returning, will actually match what you are expecting.
 
 
-```
+```php
 <?php
 
 function calculateDimensions(int $inputValue, out int $width, out int $height) {
@@ -52,8 +52,8 @@ Someone needs to sit down and do the work to think through how it should work, a
 
 Random list of possibilities:
 
-* in/out keywords
-* Copying the TScript idea of having a separator in the parameter list
+* `in`/`out` keywords
+* Copying the TypeScript idea of having a separator in the parameter list
 * In place of the return type.
 
 I have no idea which would be better.
