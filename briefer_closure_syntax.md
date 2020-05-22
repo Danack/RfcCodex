@@ -19,7 +19,7 @@ This is similar to how closures were originally implemented in Javascript.
 ```php
 
 var add1 = function (x) {
-    retun x + 1;
+    return x + 1;
 }
 
 ```
@@ -79,7 +79,7 @@ $result = fn(2);
 
 ```
 
-Exactly what the syntax should be for use`ing variables seems to need to be settled.
+Exactly what the syntax should be for using variables seems to need to be settled.
 
 
 Also, should people be able to set return types for short closures, and what the syntax for that should be.
