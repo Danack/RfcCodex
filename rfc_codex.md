@@ -6,7 +6,6 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 ## Things still being discussed 
 
-[Annotations](https://github.com/Danack/RfcCodex/blob/master/annotations.md)
 
 [Better web sapi](https://github.com/Danack/RfcCodex/blob/master/better_web_sapi.md)
 
@@ -53,6 +52,8 @@ Tuple returns - though these would be moot if we had [out parameters](https://gi
 Type declarations `type number = float | int;`
 
 ## Ideas that overcame their challenges
+
+[Annotations](https://github.com/Danack/RfcCodex/blob/master/annotations.md)
 
 [Briefer closure syntax](https://github.com/Danack/RfcCodex/blob/master/briefer_closure_syntax.md)
 
