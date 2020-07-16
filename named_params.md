@@ -30,6 +30,12 @@ htmlspecialchars($string, ENT_COMPAT | ENT_HTML401, 'UTF-8', false);
 ## Hurdles to overcome
 
 
+### Explaining why they are needed
+
+
+"I still don't understand what named parameters solve, BTW..."
+
+
 ### Syntax 
 
 There is still no consensus on the syntax.

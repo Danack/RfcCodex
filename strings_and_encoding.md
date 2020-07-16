@@ -6,6 +6,8 @@ Strings in PHP are a little bit terrible.
 
 In particular the way that the standard string functions like strlen are not aware of text encodings is 'not good'.
 
+Actually strings are pretty terrible in most computer languages
+https://dev.to/awwsmm/why-no-modern-programming-language-should-have-a-character-data-type-51n
 
 
 ## Locale aware

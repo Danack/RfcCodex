@@ -22,8 +22,6 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Method overloading](https://github.com/Danack/RfcCodex/blob/master/method_overloading.md)
 
-[Named params](https://github.com/Danack/RfcCodex/blob/master/named_params.md)
-
 [Out parameters](https://github.com/Danack/RfcCodex/blob/master/out_parameters.md)
 
 [Referencing functions](https://github.com/Danack/RfcCodex/blob/master/referencing_functions.md)
@@ -56,9 +54,11 @@ Type declarations `type number = float | int;`
 
 ## Ideas that overcame their challenges
 
+[Briefer closure syntax](https://github.com/Danack/RfcCodex/blob/master/briefer_closure_syntax.md)
+
 [Co- and contra-variance](https://github.com/Danack/RfcCodex/blob/master/co_and_contra_variance.md)
 
-[Briefer closure syntax](https://github.com/Danack/RfcCodex/blob/master/briefer_closure_syntax.md)
+[Named params](https://github.com/Danack/RfcCodex/blob/master/named_params.md)
 
 [Union types](https://github.com/Danack/RfcCodex/blob/master/union_types.md)
 
