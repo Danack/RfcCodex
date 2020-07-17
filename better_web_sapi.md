@@ -129,6 +129,11 @@ There are a couple of places where PHP-FPM has bad behaviour around crashes. Alt
 Currently in PHP-FPM, there are scenarios where an extension fails to be loaded correctly, which results in the pool not coming up correctly. This spams the error log with megabytes of data per minute, but otherwise provides no other info about what is happening.
 
 
+### Don't tie to SPL.
+
+It looks like SPL, Date, Session etc. are coupled with the Standard - I'd love to loose those dependencies and have a naked interpreter able to interpret the language and provide a replacement for Standard build around vendor SDK like for eg. the SDK for ESP microchips.
+
+
 ### Other ini settings
 
 There are a reasonable number of ini settings that could be removed.
@@ -141,6 +146,19 @@ There are a reasonable number of ini settings that could be removed.
 
 There needs to be a reason to keep them, other than 'why not'.
 
+### Windows + opcache + IIS oh my.
+
+I don't really understand the issue here, but apparently IIS + opcache is very special.
+
+> If you run FCGI with IIS, everything may work fine, until the temp folder gets purged. Afterwards FCGI appears to run fine, but it never can start new worker processes...
+>
+> There is a file with the base address of the mapping (and execute_ex). If that file is missing, OPcache bails out if it already has opened the existing file mapping. It might be possible to improve that by moving the info in that file into SHM, but that would require mapping at arbitrary address first, reading the info, closing, and then trying to map at the specified address.
+>
+> Also, execute_ex address doesn't catch different base addresses of extension DLLs.
+>
+> Possibly php-fpm could be made to work on windows with a thread instead of fork model...but that would be a lot of difficult work. 
+
+
 ## Hurdles to overcome
 
 ### Huge amount of work to be done 
@@ -151,6 +169,19 @@ This would be a big task to implement.
 
 There would naturally be some reluctance to bring another SAPI into core.
 
+
+# Why not copy Python’s WSGI
+
+https://www.python.org/dev/peps/pep-3333/
+
+aka do we want to redefine our own stuff yet again?
+
+
+no proper dictionary of request headers, have to access through $_SERVER["HTTP_FOO_BAR"], or through getallheaders() which, unfortunately, 1) is not available in all SAPIs (IIRC), 2) in some SAPIs is a horrible hack which does not preserve the case of the headers. Likewise header() is nasty btw.
+
+
+
+
 ## Forecast
 
 ¯\\\_(ツ)\_/¯
@@ -158,6 +189,9 @@ There would naturally be some reluctance to bring another SAPI into core.
 Could possibly be done with Golang as the process manager. Although that would raise interesting questions about where opcache would live, and how code that is already in opcache would be passed to the spawned worker processes.
 
 ## Notes
+
+
+Pools
 
 
 

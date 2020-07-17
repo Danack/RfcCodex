@@ -6,7 +6,6 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 ## Things still being discussed 
 
-[Annotations](https://github.com/Danack/RfcCodex/blob/master/annotations.md)
 
 [Better web sapi](https://github.com/Danack/RfcCodex/blob/master/better_web_sapi.md)
 
@@ -21,8 +20,6 @@ The purpose of these documents is to avoid information from being lost and to tr
 [Generics](https://github.com/Danack/RfcCodex/blob/master/generics.md)
 
 [Method overloading](https://github.com/Danack/RfcCodex/blob/master/method_overloading.md)
-
-[Named params](https://github.com/Danack/RfcCodex/blob/master/named_params.md)
 
 [Out parameters](https://github.com/Danack/RfcCodex/blob/master/out_parameters.md)
 
@@ -56,9 +53,13 @@ Type declarations `type number = float | int;`
 
 ## Ideas that overcame their challenges
 
-[Co- and contra-variance](https://github.com/Danack/RfcCodex/blob/master/co_and_contra_variance.md)
+[Annotations](https://github.com/Danack/RfcCodex/blob/master/annotations.md)
 
 [Briefer closure syntax](https://github.com/Danack/RfcCodex/blob/master/briefer_closure_syntax.md)
+
+[Co- and contra-variance](https://github.com/Danack/RfcCodex/blob/master/co_and_contra_variance.md)
+
+[Named params](https://github.com/Danack/RfcCodex/blob/master/named_params.md)
 
 [Union types](https://github.com/Danack/RfcCodex/blob/master/union_types.md)
 

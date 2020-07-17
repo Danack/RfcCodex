@@ -24,3 +24,5 @@ Thomas has put together a comprehensive set of example of how to implement many 
 Each of the examples are in a separate branch, so you can see precisely the work needed to add that particular feature.
 
 [https://github.com/ThomasWeinert/php-extension-sample](https://github.com/ThomasWeinert/php-extension-sample)
+
+https://nikic.github.io/2017/04/14/PHP-7-Virtual-machine.html
