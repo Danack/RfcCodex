@@ -129,9 +129,9 @@ There are a couple of places where PHP-FPM has bad behaviour around crashes. Alt
 Currently in PHP-FPM, there are scenarios where an extension fails to be loaded correctly, which results in the pool not coming up correctly. This spams the error log with megabytes of data per minute, but otherwise provides no other info about what is happening.
 
 
-## Don't tie to SPL.
+### Don't tie to SPL.
 
-t it looks like SPL, Date, Session etc. are coupled with the Standard - I'd love to loose those dependencies and have a naked interpreter able to interpret the language and provide a replacement for Standard build around vendor SDK like for eg. the SDK for ESP microchips.
+It looks like SPL, Date, Session etc. are coupled with the Standard - I'd love to loose those dependencies and have a naked interpreter able to interpret the language and provide a replacement for Standard build around vendor SDK like for eg. the SDK for ESP microchips.
 
 
 ### Other ini settings
@@ -145,6 +145,19 @@ There are a reasonable number of ini settings that could be removed.
 * auto_prepend_file
 
 There needs to be a reason to keep them, other than 'why not'.
+
+### Windows + opcache + IIS oh my.
+
+I don't really understand the issue here, but apparently IIS + opcache is very special.
+
+> If you run FCGI with IIS, everything may work fine, until the temp folder gets purged. Afterwards FCGI appears to run fine, but it never can start new worker processes...
+>
+> There is a file with the base address of the mapping (and execute_ex). If that file is missing, OPcache bails out if it already has opened the existing file mapping. It might be possible to improve that by moving the info in that file into SHM, but that would require mapping at arbitrary address first, reading the info, closing, and then trying to map at the specified address.
+>
+> Also, execute_ex address doesn't catch different base addresses of extension DLLs.
+>
+> Possibly php-fpm could be made to work on windows with a thread instead of fork model...but that would be a lot of difficult work. 
+
 
 ## Hurdles to overcome
 
