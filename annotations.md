@@ -4,7 +4,7 @@
 
 Sometimes it is more convenient to write some data that is associated with particular piece of code with that code, rather than in a separate place.
 
-For example, annotations are used to tell the Doctrine ORM how data is stored. For this 'Product' class, the annotation say which database table the data is stored in, the types of the columns and how to  map between 'Products' and 'Projects'.
+For example, annotations are used to tell the Doctrine ORM how data is stored. For this `Product` class, the annotation say which database table the data is stored in, the types of the columns and how to  map between `Products` and `Projects`.
 
 ```php
 
@@ -97,9 +97,10 @@ Will probably happen when someone makes an implementation that satisfies the use
 
 7th time the charm?
 
-https://wiki.php.net/rfc/attributes
-https://wiki.php.net/rfc/annotations_v2
-https://wiki.php.net/rfc/reflection_doccomment_annotations
-https://wiki.php.net/rfc/simple-annotations
-https://wiki.php.net/rfc/annotations-in-docblock
-https://wiki.php.net/rfc/annotations
+* https://wiki.php.net/rfc/attributes_v2 (accepted)
+* https://wiki.php.net/rfc/attributes
+* https://wiki.php.net/rfc/annotations_v2
+* https://wiki.php.net/rfc/reflection_doccomment_annotations
+* https://wiki.php.net/rfc/simple-annotations
+* https://wiki.php.net/rfc/annotations-in-docblock
+* https://wiki.php.net/rfc/annotations
