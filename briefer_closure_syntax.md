@@ -82,7 +82,7 @@ $result = fn(2);
 Exactly what the syntax should be for using variables seems to need to be settled.
 
 
-Also, should people be able to set return types for short closures, and what the syntax for that should be.
+Also, should people be able to set return types for short closures? And what the syntax for that should be?
 
 
 ## Forecast
