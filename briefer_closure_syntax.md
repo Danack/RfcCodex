@@ -19,7 +19,7 @@ This is similar to how closures were originally implemented in Javascript.
 ```php
 
 var add1 = function (x) {
-    retun x + 1;
+    return x + 1;
 }
 
 ```
