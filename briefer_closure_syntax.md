@@ -79,7 +79,7 @@ $result = fn(2);
 
 ```
 
-Exactly what the syntax should be for use`ing variables seems to need to be settled.
+Exactly what the syntax should be for use'ing variables seems to need to be settled.
 
 
 Also, should people be able to set return types for short closures, and what the syntax for that should be.
