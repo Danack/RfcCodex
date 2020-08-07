@@ -6,7 +6,6 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 ## Things still being discussed 
 
-
 [Better web sapi](https://github.com/Danack/RfcCodex/blob/master/better_web_sapi.md)
 
 [Class scoping improvements](https://github.com/Danack/RfcCodex/blob/master/class_scoping_improvements.md)
@@ -43,8 +42,6 @@ These need to be summarised.
 
 Async
 
-Null short-circuiting - https://wiki.php.net/rfc/nullsafe_calls
-
 Pipe-operator - https://wiki.php.net/rfc/pipe-operator
 
 Tuple returns - though these would be moot if we had [out parameters](https://github.com/Danack/RfcCodex/blob/master/out_parameters.md).
@@ -60,6 +57,8 @@ Type declarations `type number = float | int;`
 [Co- and contra-variance](https://github.com/Danack/RfcCodex/blob/master/co_and_contra_variance.md)
 
 [Named params](https://github.com/Danack/RfcCodex/blob/master/named_params.md)
+
+Null short-circuiting - https://wiki.php.net/rfc/nullsafe_operator
 
 [Union types](https://github.com/Danack/RfcCodex/blob/master/union_types.md)
 
