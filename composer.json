@@ -1,0 +1,13 @@
+{
+    "name": "danack/rfc-codex",
+    "description": "An opinionated curated documentation of previous RFC discussions",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Danack",
+            "email": "Danack@basereality.com"
+        }
+    ],
+    "require": {}
+}
