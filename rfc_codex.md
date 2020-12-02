@@ -36,6 +36,8 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Ternary right associative](https://github.com/Danack/RfcCodex/blob/master/ternary_operator_right_associative.md)
 
+[Throws declarations](https://github.com/Danack/RfcCodex/blob/master/throws_declaration.md)
+
 [Typedef callable signatures](https://github.com/Danack/RfcCodex/blob/master/typedef_callables.md)
 
 ## TODO
