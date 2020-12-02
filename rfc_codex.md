@@ -18,6 +18,8 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Generics](https://github.com/Danack/RfcCodex/blob/master/generics.md)
 
+[Immutable.md](https://github.com/Danack/RfcCodex/blob/master/generics.md)
+
 [Method overloading](https://github.com/Danack/RfcCodex/blob/master/method_overloading.md)
 
 [Out parameters](https://github.com/Danack/RfcCodex/blob/master/out_parameters.md)
@@ -40,7 +42,7 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 These need to be summarised.
 
-Async
+Async / fibres - this is being worked on.
 
 Pipe-operator - https://wiki.php.net/rfc/pipe-operator
 
@@ -61,7 +63,6 @@ Type declarations `type number = float | int;`
 Null short-circuiting - https://wiki.php.net/rfc/nullsafe_operator
 
 [Union types](https://github.com/Danack/RfcCodex/blob/master/union_types.md)
-
 
 # Misc notes
 
