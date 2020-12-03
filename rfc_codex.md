@@ -8,6 +8,8 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Better web sapi](https://github.com/Danack/RfcCodex/blob/master/better_web_sapi.md)
 
+[Call site error or exception control](https://github.com/Danack/RfcCodex/blob/master/call_site_error_exception_control.md)
+
 [Class scoping improvements](https://github.com/Danack/RfcCodex/blob/master/class_scoping_improvements.md)
 
 [Consistent callables](https://github.com/Danack/RfcCodex/blob/master/consistent_callables.md)
