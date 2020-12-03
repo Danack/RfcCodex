@@ -98,6 +98,8 @@ Any new attempt would probably need to persuade more people that this was a prob
 
 Anyway, I thought the previous RFC was going to pass so what do I know?
 
+**Update 3rd Dec 2020** - I now think this idea is moot after named params has passed.
+
 # Notes
 
 ## Alternative idea
