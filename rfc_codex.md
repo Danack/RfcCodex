@@ -14,8 +14,6 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Enums](https://github.com/Danack/RfcCodex/blob/master/enums.md)
 
-[Explicit defaults](https://github.com/Danack/RfcCodex/blob/master/explicit_defaults.md)
-
 [Generics](https://github.com/Danack/RfcCodex/blob/master/generics.md)
 
 [Immutable.md](https://github.com/Danack/RfcCodex/blob/master/generics.md)
@@ -54,6 +52,8 @@ Type declarations `type number = float | int;`
 
 ## Ideas that overcame their challenges
 
+PHP is actually getting better. These are all things that used to be pipe-dreams, but are now in PHP core. 
+
 [Annotations](https://github.com/Danack/RfcCodex/blob/master/annotations.md)
 
 [Briefer closure syntax](https://github.com/Danack/RfcCodex/blob/master/briefer_closure_syntax.md)
@@ -65,6 +65,12 @@ Type declarations `type number = float | int;`
 Null short-circuiting - https://wiki.php.net/rfc/nullsafe_operator
 
 [Union types](https://github.com/Danack/RfcCodex/blob/master/union_types.md)
+
+## Things that are probably moot
+
+PHP is actually getting better, but that means that some solutions to problems have become pretty moot, as they seek to solve problems that are now less of a problem.
+
+[Explicit defaults](https://github.com/Danack/RfcCodex/blob/master/explicit_defaults.md)
 
 # Misc notes
 
