@@ -115,6 +115,21 @@ that returns something like this:
 Also "post_max_size exceeded. post_max_size just clears all data when overflowing"
 
 
+### Ini settings not normalised
+
+```php
+<?php
+
+// run with
+// php -d imagick.shutdown_sleep_count=Off debug.php
+
+$sleepCount = ini_get('imagick.shutdown_sleep_count');
+
+var_dump($sleepCount);
+// output is string('')
+?>
+```
+ 
 ### Better pool management
 
 Currently the pools can only be managed through config files. It would be quite convenient to be able to set things like pool sizes dynamically, either internally through PHP code, or externally through an API.
