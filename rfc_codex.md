@@ -18,7 +18,7 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Generics](https://github.com/Danack/RfcCodex/blob/master/generics.md)
 
-[Immutable.md](https://github.com/Danack/RfcCodex/blob/master/generics.md)
+[Immutables](https://github.com/Danack/RfcCodex/blob/master/immutable.md)
 
 [Method overloading](https://github.com/Danack/RfcCodex/blob/master/method_overloading.md)
 
