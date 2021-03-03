@@ -61,7 +61,7 @@ class Foo {
     }
 }
 
-class FooBar {
+class FooBar extends Foo {
     function sum(float $a, float $b): float
     {
         echo "float version was called\n";
@@ -73,6 +73,7 @@ $foobar = new FooBar();
 $foobar->sum($x1, $x2);
 ```
 
+The exact behaviour of that code for different types of $x1 and $x2 are also unclear. 
 
 ### People have strong feelings for method overloading
 
