@@ -125,7 +125,7 @@ It's hard to draw an exact line of where communication is fine to go off-list, a
 
 # Don't pressure people by private communication to vote
 
-Even with the best intentions, unsolicited off-list communications putting pressure people to vote a particular way are rude. At best they don't have any effect, but most of the time they make the recipient uncomfortable.
+Even with the best intentions, unsolicited off-list communications putting pressure on people to vote a particular way are rude. At best they don't have any effect, but most of the time they make the recipient uncomfortable.
 
 If you want to influence how people are going to vote, these things are appropriate:
 
