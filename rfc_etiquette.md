@@ -125,7 +125,7 @@ It's hard to draw an exact line of where communication is fine to go off-list, a
 
 # Don't pressure people by private communication to vote
 
-Even with the best intentions, unsolicited off-list communications are rude. At best they don't have any effect, but most of the time they make the recipient uncomfortable.
+Even with the best intentions, unsolicited off-list communications putting pressure people to vote a particular way are rude. At best they don't have any effect, but most of the time they make the recipient uncomfortable.
 
 If you want to influence how people are going to vote, these things are appropriate:
 
@@ -133,5 +133,5 @@ If you want to influence how people are going to vote, these things are appropri
 * Posting on Reddit /r/php or other platform where discussions take place, and then posting a link to internals, saying "these are my thoughts".
 * Asking in a public communication channel asking someone in a neutral way 'are you going to vote?'.
 
-Private communications trying to change people's minds are a burden that make people receiving them feel bad, even if they aren't intentioned to help the project.
+Private communications trying to change people's minds are a burden that make people receiving them feel bad, even if they are intentioned to help the project.
 
