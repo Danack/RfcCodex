@@ -112,7 +112,7 @@ Even if you don't like an RFC being discussed, it is more appropriate to ignore 
 
 Drafting RFCs and pushing them through internals is an exhausting process. Several PHP contributors have suddenly stopped contributing to the project after successfully getting an RFC passed, due to them being entirely fed up.
 
-One of the things that is tiresome is people contacting the RFC author through  communication channels (other than the PHP internals list), particularly when what they are going to say is either negative or even just based on not understanding part of the RFC.
+One of the things that is tiresome is people contacting the RFC author through communication channels (other than the PHP internals list), particularly when what they are going to say is either negative or even just based on not understanding part of the RFC.
 
 There is a difference between giving positive feedback and negative feedback. And there is a difference between giving feedback to someone you have communicated with many times before, and contacting someone for the first time.
 
@@ -122,3 +122,16 @@ It's hard to draw an exact line of where communication is fine to go off-list, a
 "I found some typos in the RFC" - probably fine to send off-list, particularly if you communicate with the RFC author already.
 "Please can you answer this question about the RFC" - possibly fine to send off-list, but only if you know the RFC author already.
 "The RFC is a terrible idea for these reasons" - should only be sent via the list. 
+
+# Don't pressure people by private communication to vote
+
+Even with the best intentions, unsolicited off-list communications are rude. At best they don't have any effect, but most of the time they make the recipient uncomfortable.
+
+If you want to influence how people are going to vote, these things are appropriate:
+
+* Sending an email to internals saying that you would like to see this pass.
+* Posting on Reddit /r/php or other platform where discussions take place, and then posting a link to internals, saying "these are my thoughts".
+* Asking in a public communication channel asking someone in a neutral way 'are you going to vote?'.
+
+Private communications trying to change people's minds are a burden that make people receiving them feel bad, even if they aren't intentioned to help the project.
+
