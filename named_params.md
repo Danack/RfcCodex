@@ -71,6 +71,9 @@ This idea keeps coming up during discussions of other RFCs.
 
 * [Compact Object Property Assignment](https://wiki.php.net/rfc/compact-object-property-assignment) - this idea appears to be one special case of named params. 
 
+## Implemented!
+
+Named parameters were [implemented in PHP 8.0](https://wiki.php.net/rfc/named_params).
 
 ## Notes
 

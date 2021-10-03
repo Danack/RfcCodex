@@ -61,6 +61,10 @@ Likely to happen.
 
 More likely to happen sooner if a company could sponsor Levi or Bob to work on it with a few months salary.
 
+## Implemented!
+
+Enums were [implemented in PHP 8.1](https://wiki.php.net/rfc/enumerations).
+
 
 ## Notes
 

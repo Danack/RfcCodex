@@ -60,6 +60,10 @@ Someone needs to figure out what the correct behaviour is around:
 
 PHP 8.2
 
+## Implemented!
+
+First-class callable syntax [implemented in PHP 8.1](https://wiki.php.net/rfc/first_class_callable_syntax).
+
 ## Notes
 
 
