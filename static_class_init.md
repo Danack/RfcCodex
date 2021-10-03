@@ -36,10 +36,10 @@ TODO - link to explanation of PHP's circular class dependency problem
 
 The behaviour of static class initialization is quite magic. Johannes Schlüter put it quite clearly:
 
-  In my opinion this makes the language way more complex as there are more
+  'In my opinion this makes the language way more complex as there are more
   places which "suddenly" execute code but solves a small problem compared
   to that. (Which actually is an issue many people would suggest to avoid
-  completely instead of ennobling this with a language feature.
+  completely instead of ennobling this with a language feature.)
 
   Why am I saying it makes the language more complex? - Your proposal
   seems to miss mentioning when exactly the method is executed. what is
@@ -96,7 +96,7 @@ echo 'H: '.__FILE__.':'.__LINE__."\n";
   Mind that in b.php we make use of class C above the declaration, which
   we can do as C is a simple class and can be bound early during
   compilation. Class D however can only be bound during run-time, after
-  including a.php, which happens after C was already used.
+  including a.php, which happens after C was already used.'
 
 
 ### It's already possible without engine support
