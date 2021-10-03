@@ -114,8 +114,9 @@ Likely to happen when one day, when one of the core developers gets bored enough
 
 ## Notes
 
-If people are really desperate for generics, then they should look at using [https://preprocess.io/](https://preprocess.io/) to start using generics through that, rather than waiting for them in PHP.
+Nikita Popov made some [detailed notes on his analysis](https://github.com/PHPGenerics/php-generics-rfc/issues/45) of trying to implement it.
 
+If people are really desperate for generics, then they should look at using [https://preprocess.io/](https://preprocess.io/) to start using generics through that, rather than waiting for them in PHP.
 
 ### Usage as a solution to overloading methods.
 
@@ -132,8 +133,6 @@ class Foo {
 where the difference between the methods is that the return type is the same type as the `$default` parameter.
 
 This could be solved with some solution that touched generics and union types.
-
-
 
 ```php
 class Foo {
