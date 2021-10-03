@@ -54,14 +54,13 @@ There would be some work to do for each extension to make sure that the args def
 
 ```
 ZEND_BEGIN_ARG_INFO_EX(imagickpixel_sethsl_args, 0, 0, 3)
-		ZEND_ARG_INFO(0, hue)
-		ZEND_ARG_INFO(0, saturation)
-		ZEND_ARG_INFO(0, luminosity)
-	ZEND_END_ARG_INFO()
+	ZEND_ARG_INFO(0, hue)
+	ZEND_ARG_INFO(0, saturation)
+	ZEND_ARG_INFO(0, luminosity)
+ZEND_END_ARG_INFO()
 ```
 
-has appropriate spelling of parameter names, as changing the name will become a BC break once named params are added.  
-
+has appropriate spelling of parameter names, as changing the name will become a BC break once named params are added.
 
 ## Forecast
 
