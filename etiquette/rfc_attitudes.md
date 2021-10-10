@@ -97,6 +97,18 @@ Some of the examples of this were:
  * Scalar types.
  * Using a top level namespace for core PHP functions (other than for code strongly coupled to the PHP engine). 
 
+### Duplicating features to save a few characters
+
+PHP is relatively verbose compared to some languages. There are [some suggestions](https://wiki.php.net/rfc/short-functions) that PHP [would be better](https://news-web.php.net/php.internals/116231) if fewer characters were needed for some things.
+
+However the tradeoffs for that would be:
+
+* more complexity in the engine.
+* more complexity in static analysis tools.
+* more stuff to learn for new programmers.
+
+Most people don't seem to feel that being able to write slightly fewer characters is worth that much.
+
 ### Ideas that make code harder to reason about
 
 One of the strengths of PHP is that code written in it is usually reasonably easy to understand. For example the Doctrine ORM is written in PHP, so that if you ever encounter unexpected behaviour in it, you can debug the PHP code yourself.
