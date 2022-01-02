@@ -2,8 +2,13 @@
 
 ## Summary 
 
-Make callables be less insane in PHP https://wiki.php.net/rfc/consistent_callables
+~~Make callables be less insane in PHP https://wiki.php.net/rfc/consistent_callables~~
 
+Most of the behaviour has been cleaned up in the [Deprecate partially supported callables](https://wiki.php.net/rfc/deprecate_partially_supported_callables) RFC. However there is still some stuff left:
+
+> if we want to make callables a proper type we need to forbid specifying
+> non-public methods through them, and require those to use
+> Callable::fromCallable() / first class callable syntax instead
 
 ## Forecast
 

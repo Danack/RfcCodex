@@ -173,6 +173,9 @@ I don't really understand the issue here, but apparently IIS + opcache is very s
 >
 > Possibly php-fpm could be made to work on windows with a thread instead of fork model...but that would be a lot of difficult work. 
 
+### PHP-FPM process management woes
+
+I'm not even going to attempt to summarise the problem [but apparently it's quite bad](https://news-web.php.net/php.internals/116725) for extension maintainers.
 
 ## Hurdles to overcome
 

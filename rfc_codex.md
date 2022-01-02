@@ -6,6 +6,8 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 ## Things still being discussed 
 
+[Array key casting](https://github.com/Danack/RfcCodex/blob/master/array_key_casting.md)
+
 [Better web sapi](https://github.com/Danack/RfcCodex/blob/master/better_web_sapi.md)
 
 [Call site error or exception control](https://github.com/Danack/RfcCodex/blob/master/call_site_error_exception_control.md)
@@ -14,11 +16,7 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Consistent callables](https://github.com/Danack/RfcCodex/blob/master/consistent_callables.md)
 
-[Enums](https://github.com/Danack/RfcCodex/blob/master/enums.md)
-
 [Generics](https://github.com/Danack/RfcCodex/blob/master/generics.md)
-
-[Immutables](https://github.com/Danack/RfcCodex/blob/master/immutable.md)
 
 [Method overloading](https://github.com/Danack/RfcCodex/blob/master/method_overloading.md)
 
@@ -28,13 +26,13 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Standardise core library](https://github.com/Danack/RfcCodex/blob/master/standardise_core_library.md)
 
+[Strict mode and internal engine callbacks](https://github.com/Danack/RfcCodex/blob/master/engine_strict_mode_interaction.md)
+
 [Strings/encoding is terrible](https://github.com/Danack/RfcCodex/blob/master/strings_and_encoding.md)
 
 [Strong typing](https://github.com/Danack/RfcCodex/blob/master/strong_typing.md)
 
 [Structs](https://github.com/Danack/RfcCodex/blob/master/structs.md)
-
-[Ternary right associative](https://github.com/Danack/RfcCodex/blob/master/ternary_operator_right_associative.md)
 
 [Throws declarations](https://github.com/Danack/RfcCodex/blob/master/throws_declaration.md)
 
@@ -43,8 +41,6 @@ The purpose of these documents is to avoid information from being lost and to tr
 ## TODO
 
 These need to be summarised.
-
-Async / fibres - this is being worked on.
 
 Pipe-operator - https://wiki.php.net/rfc/pipe-operator
 
@@ -62,9 +58,15 @@ PHP is actually getting better. These are all things that used to be pipe-dreams
 
 [Co- and contra-variance](https://github.com/Danack/RfcCodex/blob/master/co_and_contra_variance.md)
 
+[Enums](https://github.com/Danack/RfcCodex/blob/master/enums.md)
+
+[Immutables](https://github.com/Danack/RfcCodex/blob/master/immutable.md)
+
 [Named params](https://github.com/Danack/RfcCodex/blob/master/named_params.md)
 
 Null short-circuiting - https://wiki.php.net/rfc/nullsafe_operator
+
+[Ternary right associative](https://github.com/Danack/RfcCodex/blob/master/ternary_operator_right_associative.md)
 
 [Union types](https://github.com/Danack/RfcCodex/blob/master/union_types.md)
 
