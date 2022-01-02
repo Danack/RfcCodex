@@ -32,6 +32,7 @@ if (0 <= y && y<= 10) {...}
 ```
 is jankier, as it makes the code harder to read.
 
+PHP would be better if we just stole this feature. Did I say steal? I meant be inspired by. I apologies for the confusion.
 
 ## Hurdles to overcome
 

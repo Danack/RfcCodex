@@ -34,6 +34,8 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Structs](https://github.com/Danack/RfcCodex/blob/master/structs.md)
 
+[Template string literals](https://github.com/Danack/RfcCodex/blob/master/template_literals.md)
+
 [Throws declarations](https://github.com/Danack/RfcCodex/blob/master/throws_declaration.md)
 
 [Typedef callable signatures](https://github.com/Danack/RfcCodex/blob/master/typedef_callables.md)
