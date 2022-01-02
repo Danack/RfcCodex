@@ -14,6 +14,8 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Class scoping improvements](https://github.com/Danack/RfcCodex/blob/master/class_scoping_improvements.md)
 
+[Chained comparison operators](https://github.com/Danack/RfcCodex/blob/master/chained_comparison_operators.md)
+
 [Consistent callables](https://github.com/Danack/RfcCodex/blob/master/consistent_callables.md)
 
 [Generics](https://github.com/Danack/RfcCodex/blob/master/generics.md)
@@ -21,8 +23,6 @@ The purpose of these documents is to avoid information from being lost and to tr
 [Method overloading](https://github.com/Danack/RfcCodex/blob/master/method_overloading.md)
 
 [Out parameters](https://github.com/Danack/RfcCodex/blob/master/out_parameters.md)
-
-[Referencing functions](https://github.com/Danack/RfcCodex/blob/master/referencing_functions.md)
 
 [Standardise core library](https://github.com/Danack/RfcCodex/blob/master/standardise_core_library.md)
 
@@ -58,13 +58,15 @@ PHP is actually getting better. These are all things that used to be pipe-dreams
 
 [Co- and contra-variance](https://github.com/Danack/RfcCodex/blob/master/co_and_contra_variance.md)
 
-[Enums](https://github.com/Danack/RfcCodex/blob/master/enums.md)
+[Enums](https://github.com/Danack/RfcCodex/blob/master/enums.md) implemented by [Enumerations](https://wiki.php.net/rfc/enumerations).
 
-[Immutables](https://github.com/Danack/RfcCodex/blob/master/immutable.md)
+[Immutables](https://github.com/Danack/RfcCodex/blob/master/immutable.md) - this is done through the [Readonly properties](https://wiki.php.net/rfc/readonly_properties_v2). There is still some work to do here, as currently it is slightly annoying to clone an object and during the clone change some of it's properties.
 
 [Named params](https://github.com/Danack/RfcCodex/blob/master/named_params.md)
 
 Null short-circuiting - https://wiki.php.net/rfc/nullsafe_operator
+
+[Referencing functions](https://github.com/Danack/RfcCodex/blob/master/referencing_functions.md) - implemented by [First-class callable syntax](https://wiki.php.net/rfc/first_class_callable_syntax)
 
 [Ternary right associative](https://github.com/Danack/RfcCodex/blob/master/ternary_operator_right_associative.md)
 
