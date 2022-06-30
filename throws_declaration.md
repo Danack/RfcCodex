@@ -37,6 +37,10 @@ It's hard to say exactly why, but a significant number of people who experienced
 
 Any proposal for this would first have to understand in depth why this feature was so painful to use, and then figure out a way to make it less painful for PHP.
 
+### Why not just use docblocks?
+
+A strong argument would probably need to be made for why this deserves to be part of the engine itself, and not something that is done by static analyzers using information that comes from the docblocks of functions.
+
 ## Forecast
 
 Unlikely. 
