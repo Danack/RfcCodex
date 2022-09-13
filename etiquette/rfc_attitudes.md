@@ -193,10 +193,10 @@ This means that in a future version of PHP, we could drop the requirement for pa
 
 For example, renaming a class should have at least one version where both the old name and new name is supported.
 
-i) User has code running on version x.y of PHP that uses the old name, as that is the only name available.
-ii) User code runs on version x.(y+1) of PHP that still uses the old name, to check that all their code works on that version of PHP.
-iii) The user changes any use of old names on x.(y+1) to the new name.
-iv) Old names can be remove in version x.(y+2)
+i) User has code running on version x.y of PHP that uses the old name, as that is the only name available.  
+ii) User code runs on version x.(y+1) of PHP that still uses the old name, to check that all their code works on that version of PHP.  
+iii) The user changes any use of old names on x.(y+1) to the new name.  
+iv) Old names can be remove in version x.(y+2). 
 
 
 ### Being written clearly 
