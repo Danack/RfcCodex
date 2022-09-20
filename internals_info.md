@@ -2,20 +2,15 @@
 
 This document lists some resources people may find useful to start to learn how PHP works internally, and what is involved in PHP extension development.
 
-The information about what people could be working on is kept in a separate document at [PHP Project Coordination](https://github.com/Danack/RfcCodex/blob/master/project_coordination.md)
-
 ## PHP internals book 
 
-This book is a collaborative effort between several developers of the PHP language to better document and describe how PHP works internally.
+[www.phpinternalsbook.com](http://www.phpinternalsbook.com/) is a collaborative effort between several developers of the PHP language to better document and describe how PHP works internally.
 
-There are three primary goals of this book:
+The three primary goals of the book are:
 
 * Document and describe how PHP internals work.
 * Document and describe how to extend the language with extensions.
 * Document and describe how you can interact with the community to develop PHP itself.
-
-[http://www.phpinternalsbook.com/](http://www.phpinternalsbook.com/)
-
 
 ## PHP extension sample
 
@@ -25,4 +20,13 @@ Each of the examples are in a separate branch, so you can see precisely the work
 
 [https://github.com/ThomasWeinert/php-extension-sample](https://github.com/ThomasWeinert/php-extension-sample)
 
-https://nikic.github.io/2017/04/14/PHP-7-Virtual-machine.html
+## Miscellaneous resources
+
+[PHP 7 Virtual Machine](https://nikic.github.io/2017/04/14/PHP-7-Virtual-machine.html) by Nikita Popov
+
+[PHP parameter parsing](/internals/php_parameter_parsing)
+
+
+## Links
+
+[Nikic's blog](https://www.npopov.com/)

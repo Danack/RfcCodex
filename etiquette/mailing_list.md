@@ -1,9 +1,16 @@
 
 # Draft
 
-Draft, Draft, Draft, Draft, Draft, Draft
+Draft, Draft, Draft, Draft, Draft, Draft....can you tell it's a draft?
+
 
 # Mailing list etiquette guidelines
+
+The [official mailinglist rules](https://github.com/php/php-src/blob/master/docs/mailinglist-rules.md) provide a set of rules that should be followed. This document goes into a bit more detail for some of those rules, and a few subtleties.
+
+This is an evolution from https://www.netmeister.org/news/learn2quote.html
+
+
 
 The PHP mailing lists are one of the tools used for communication in the PHP project.
 
@@ -33,13 +40,11 @@ In particular, if you're not able to spare enough time on one day to give a cons
 
 ### What is top-posting?
 
-
 ### How much should I quote?
 
 As little as possible, without losing context.
 
 People reading the thread will understand the  
-
 
 On the other hand, the quotation should not be so short that it is unclear to what the author is referring to, or so that it may even appear in a totally different light.
 
@@ -123,14 +128,11 @@ There can be exceptions for this, for example fixing a broken link, or when some
 
 
 
-## 
-
-
-Don't hijack other peoples' threads. To post on a new topic, start a new message, don't reply and just change the subject.
+## Start new threads when topics drift
 
 
 
-This is an evolution from https://www.netmeister.org/news/learn2quote.html
+
 
 
 
@@ -147,4 +149,3 @@ People base their decisions on multiple things including their own experiences
 
 
 
-https://www.php.net/manual/en/faq.mailinglist.php

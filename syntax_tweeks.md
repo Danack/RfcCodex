@@ -25,9 +25,9 @@ http://phpsadness.com/sad/46
 ## Hurdles to overcome
 
 
-https://github.com/Danack/RfcCodex/blob/master/rfc_attitudes.md#small-ratio-of-reward-to-work-involved-and-bc-breaks
+https://github.com/Danack/RfcCodex/blob/master/etiquette/rfc_attitudes.md#small-ratio-of-reward-to-work-involved-and-bc-breaks
 
-https://github.com/Danack/RfcCodex/blob/master/rfc_attitudes.md#non-beneficial-changes
+https://github.com/Danack/RfcCodex/blob/master/etiquette/rfc_attitudes.md#non-beneficial-changes
 
 ### Hurdle 1 
 

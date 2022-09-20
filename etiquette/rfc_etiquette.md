@@ -2,7 +2,7 @@
 
 There are some behaviours that I see people do when discussing RFCs, and other software projects (both open source, and closed source) that I think are either subtly, but incredibly rude, or otherwise do not help people have a productive conversation.
 
-## Don't publicise draft work
+## Don't publicise other people's draft work
 
 The site wiki.php.net/rfc is a tool that is meant to allow people to draft RFCs and share the idea with other people who want to work on the RFC before it is a polished idea, and before it is ready to be presented to the world.
 

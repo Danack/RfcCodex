@@ -101,9 +101,9 @@ One suggested used for method overloading was for a use-case along these lines:
 
 ```php
 class Foo {
-    public function get($name, string $default) : string;
-    public function get($name, int $default) : int;
-    public function get($name, Bar $default) : Bar;
+    public function get($name, string $default): string;
+    public function get($name, int $default): int;
+    public function get($name, Bar $default): Bar;
 }
 ```
 
@@ -113,7 +113,7 @@ This could be solved with some solution that touched generics and union types.
 
 ```php
 class Foo {
-    public function get<T : int|string|Bar>($name, T $default) : T;
+    public function get<T : int|string|Bar>($name, T $default): T;
 }
 ```
 
