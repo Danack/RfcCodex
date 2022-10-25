@@ -16,8 +16,6 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Chained comparison operators](https://github.com/Danack/RfcCodex/blob/master/chained_comparison_operators.md)
 
-[Consistent callables](https://github.com/Danack/RfcCodex/blob/master/consistent_callables.md)
-
 [Generics](https://github.com/Danack/RfcCodex/blob/master/generics.md)
 
 [Method overloading](https://github.com/Danack/RfcCodex/blob/master/method_overloading.md)
@@ -77,6 +75,8 @@ Null short-circuiting - https://wiki.php.net/rfc/nullsafe_operator
 ## Things that are probably moot
 
 PHP is actually getting better, but that means that some solutions to problems have become pretty moot, as they seek to solve problems that are now less of a problem.
+
+[Consistent callables](https://github.com/Danack/RfcCodex/blob/master/consistent_callables.md)
 
 [Explicit defaults](https://github.com/Danack/RfcCodex/blob/master/explicit_defaults.md)
 
