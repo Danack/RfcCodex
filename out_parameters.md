@@ -83,4 +83,4 @@ Quite likely to happen one day. Mostly needs someone to spend the time on it.
 
 ## Notes
 
-This is a precusor idea to having better error handling in PHP.
+This is possibly a precusor idea to having better error handling in PHP.
