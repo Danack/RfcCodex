@@ -40,11 +40,31 @@ function add(number $x1, number $x2): number {}
 
 That's the only hurdle I can think of. It seems like a straitforward reasonble idea.
 
+
+### People will want typed arrays
+
+e.g. 
+
+```
+type foo = array(0 => int, 1 => string)
+
+
+function bar(foo $foo) {}
+
+foo([4, "hello"]);
+
+```
+
+Which might be more problematic.
+
+
+
 ## Forecast
 
 Pretty sure it would be accepted overwhelmingly. 
 
 Unless there was something very horrible about the implementation it would seem to be something that most people who use types would understand and appreciate.
+
 
 ## Notes
 
