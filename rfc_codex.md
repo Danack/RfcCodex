@@ -36,7 +36,9 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Throws declarations](https://github.com/Danack/RfcCodex/blob/master/throws_declaration.md)
 
-[Typedef callable signatures](https://github.com/Danack/RfcCodex/blob/master/typedef_callables.md)
+[Type aliasing](https://github.com/Danack/RfcCodex/blob/master/type_aliasing.md)
+
+[Type callable signatures](https://github.com/Danack/RfcCodex/blob/master/typedef_callables.md)
 
 ## TODO
 
