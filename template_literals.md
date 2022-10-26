@@ -8,23 +8,23 @@ The feature of [template literals](https://developer.mozilla.org/en-US/docs/Web/
 
 The TL:DR of template literals is that they provide an easy way of separating strings written by a programmer from values.
 
-Imagine that PHP supported template literals through the syntax "$\`\`, then the following code:
+Imagine that PHP supported template literals through the syntax "$\`\`", then the following code:
 
 ```
-function foo(array $strings, mixed ...$values) {
+function foo(TemplateLiteral $tl) {
     echo "String parts are:\n";
-    var_dump($strings);
+    var_dump($tl->getStringParts());
 
     echo "\n";
 
     echo "Values are:\n";
-    var_dump($values);
+    var_dump($tl->getValues());
 }
 
 $person = 'John';
 $age = 42;
 
-foo($`That ${ person } is a ${ age }.`);
+foo($`That $person is a $age.`);
 
 ```
 
@@ -49,6 +49,9 @@ array(2) {
   int(42)
 }
 ```
+
+i.e. all of the literal strings are available, and all of the values of the variables are available, but those two things are completely separated.
+
 
 The improvement over is_literal is that it would allow users to write things like DB queries in a very natural way, e.g.:
 
