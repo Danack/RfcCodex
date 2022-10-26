@@ -4,7 +4,7 @@
 
 As part of the [is_literal RFC discussion](https://wiki.php.net/rfc/is_literal), one thing was mentioned was that just being able to tell if some string is a literal written in the source code doesn't provide much value.
 
-The feature of [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) is much more useful as it makes it easier to write custom DSL's in PHP code.
+The feature of [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) is much more useful as it makes it easier to write custom DSL's in PHP code. We should steal it from JavaScript.
 
 The TL:DR of template literals is that they provide an easy way of separating strings written by a programmer from values.
 
