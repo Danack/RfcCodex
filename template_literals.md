@@ -63,11 +63,103 @@ Without having to jump through the hoops of using a special query builder to ens
 
 The exact details of the syntax who probably depend on parser and other technical limitations.
 
+## Heredoc + string limitations on calling functions
+
+
+
+
+It is possible to use variables inside a string:
+```
+// String example
+
+$name = "Danack";
+
+echo "Hello there {$name}!";
+
+// Output is 'Hello there Danack!'
+```
+
+Or a heredoc block:
+
+```
+$name = "Danack";
+$text = <<< TEXT
+Hello there {$name}!
+TEXT;
+
+// Output is 'Hello there Danack!'
+```
+
+
+However, it is not possible to directly use a function inside a string: 
+
+```
+// String example
+function get_name()
+{
+    return "Danack";
+}
+
+echo "Hello there {get_name()}!";
+
+// Output 'is Hello there {get_name()}!' 
+```
+
+or a heredoc block:
+
+```
+function get_name()
+{
+    return "Danack";
+}
+
+echo <<< TEXT
+Hello there {get_name()}!
+TEXT;
+
+// Output 'is Hello there {get_name()}!' 
+
+```
+
+Instead, you need to jump through the hoop of using a variable to reference a closure of the function:
+
+```
+// string example
+function get_name()
+{
+    return "Danack";
+}
+
+$fn_get_name = get_name(...);
+
+echo "Hello there {$fn_get_name()}!";
+```
+
+```
+// heredoc example
+
+function get_name()
+{
+    return "Danack";
+}
+
+$fn_get_name = get_name(...);
+
+echo <<< TEXT
+Hello there {$fn_get_name()}!
+TEXT;
+
+// Output is 'Hello there Danack!'
+```
+
+Which is an ungreat limitation. If PHP is getting a new way of doing template strings, then fixing this limitation would be good. 
+
+
 ## Hurdles to overcome
 
 ### Syntax needs to be chosen
 
-Currently backticks as used in JavaScript are used as the [execution operator in PHP](https://www.php.net/manual/en/language.operators.execution.php).
+Currently, backticks as used in JavaScript are used as the [execution operator in PHP](https://www.php.net/manual/en/language.operators.execution.php).
 
 Although using the same syntax as JavaScript would be nice, not clashing with the current usage is probably a priority.
 
@@ -84,4 +176,4 @@ The JavaScript implementation also gives access to the 'raw' string:
 > the tag function, allows you to access the raw strings as they
 > were entered, without processing escape sequences.
 
-The utility of this needs to be understood.
+The utility of which needs to be understood.
