@@ -20,21 +20,47 @@ Other times, there may be two very similar comments which can be responded to in
 
 Depending on the level of interest in a topic, your response may be read by hundreds or thousands of people.
 
-Taking the time to make your communication be as clear as possible can save a significant amount of time of PHP developers.
+Taking the time to make your communication be as clear as possible can save a significant amount of time of other PHP developers.
 
 In particular, if you're not able to spare enough time on one day to give a considered response, then it's better to wait until you do have time, rather than giving a ill-considered response.
 
 ### Don't send too many messages per day
 
-Exactly how many is too many is hard to say, 
+Exactly how many is too many is hard to say. If you're the author of an RFC, then you might send quite a few, responding to each person in a thread.
+
+If you're commenting on an RFC, then the boundary for 'too many' is probably closer to one a day.
 
 ### Start new threads when topics drift
+
+It's not uncommon for threads to drift from one topic to another. When this happens, to avoid messages that are not relevant to the original thread from being displayed in the original thread, you should modify the subject line with a new subject line, and include the previous subject with a `was: foo`
+
+For example the thread:
+
+```
+PCRE JIT stack size limit
+```
+
+drift to discuss security problems, and so was changed to: 
+
+```
+CRE jit security hole (was: PCRE JIT stack size limit)
+```
+
+Exact spelling isn't a concern. If you want to throw in a 'formerly':
+
+```
+CRE jit security hole (formerly was: PCRE JIT stack size limit)
+```
+
+go for it.
 
 ### Almost never send partial messages
 
 Occasionally people will reply to someone else's message with something along the lines of:
 
-> I'm out of the office right, now. I'll take a look at it tomorrow.
+```
+I'm out of the office right, now. I'll take a look at it tomorrow.
+```
 
 PHP Internals is a mailing list, not a real-time chat. It's okay to take days to respond to a message.
 
@@ -65,8 +91,12 @@ User C. wrote:
 > Lisa wrote:
 > > John wrote:
 > > > blablabla
+>
 > > blubberblubber
+>
 > laberlaber
+
+I agree with all these points.
 ```
 
 It's not necessary to include the date and time, except when replying to very old messages where making it obvious that you're resurrecting an inactive conversation is useful.
@@ -83,7 +113,6 @@ John wrote on https://github.com/php/php-src/pull/3:
 > This is a BC break, it probably needs an RFC
 ```
 
-
 ### What is top-posting?
 
 It is when you write your reply above the text you are quoting.
@@ -91,7 +120,7 @@ It is when you write your reply above the text you are quoting.
 ```
 Ok cool. I'll draft one up.
 
-John wrote on https://github.com/php/php-src/pull/3:
+John wrote:
 > This is a BC break, it probably needs an RFC
 
 ```
@@ -101,6 +130,17 @@ John wrote on https://github.com/php/php-src/pull/3:
 People read top to bottom. 
 
 If it was the other way round, and your response is above the text you are responding to, people would need to scroll past your response, read the previous text, and then scroll back up.
+
+```
+John wrote:
+> This is a BC break, it probably needs an RFC
+
+Ok cool. I'll draft one up.
+```
+
+With the text in this order, the reader can see a brief reminder of what the state of the conversation is, without having to move their eyes down first. 
+
+The book [Rocket Surgery Made Easy](https://www.amazon.co.uk/Rocket-Surgery-Made-Easy-Yourself/dp/0321657292/ref=sr_1_1) might be of interest to you if you don't agree with this rule.
 
 ### But my email client defaults to putting replies above the message.
 
@@ -113,7 +153,7 @@ In a mailing list, your messages are read by many more people, and there are man
 It makes it much easier to see where the quoted part ends, and your response begins.
 
 ```
-John wrote on https://github.com/php/php-src/pull/3:
+John wrote:
 > This is a BC break, it probably needs an RFC
 
 Ok cool. I'll draft one up.

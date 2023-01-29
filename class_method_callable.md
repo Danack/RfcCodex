@@ -41,5 +41,6 @@ It's one of the missing pieces in the language.
 
 ## Notes
 
+Java uses the same syntax as I'm currently suggesting.
 
-
+https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html
