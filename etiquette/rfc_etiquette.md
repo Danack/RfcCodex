@@ -80,12 +80,11 @@ Maybe they have experienced in a different language what is being proposed for P
 Whatever the reason, when people respond with something less than overwhelming support for the idea, they aren't doing it out of malice, they're doing it because they also want PHP to be the best possible language it can be - they just disagree about what that means. 
  
 
-
 ## Do take your time to respond to emails
 
 For a couple of reasons, it is appropriate to take time to read and compose emails about RFCs; much longer than you spend writing emails on other subjects.
 
-> "I'm sorry I wrote you such a long letter; I didn't have time to write a short one.
+> I'm sorry I wrote you such a long letter; I didn't have time to write a short one.
 
 Emails that are sent on PHP internals that discuss RFCs are read by hundreds if not thousands of people.
 

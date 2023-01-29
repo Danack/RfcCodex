@@ -74,18 +74,6 @@ Although the [Allow function calls in constant expressions](https://wiki.php.net
 
 There are some ideas that while they would definitely make PHP better, but currently don't justify doing the the work that would be involved to implement them, or the work the users of PHP would have to do to adapt to the backward-compatibility break.
 
-This is the main reason that I haven't pursued the [Consistent Callables](
-https://wiki.php.net/rfc/consistent_callables) RFC. Although that RFC would make PHP better, it wouldn't be significantly better. 
-
-Instead being able to specify 'callable' signatures along the lines of:
-```
-typedef validateFn = function(string $item): bool;
-```
-
-Would provide a lot more value to PHP, as well as allow existing code to continue to work, until in a future version of PHP the whole callable type could be removed.
-
-See also the [Function interfaces](https://wiki.php.net/rfc/functional-interfaces) RFC.
-
 ### Non-beneficial changes
 
 Similar to the attitude of 'small ratio of reward to work', there is a separate phenomenon where the current maintainers think that the RFC provides no value, so no matter how little work it is, they still don't want to make that change.
@@ -149,7 +137,6 @@ function foo()
 where `@bar(...)` immediately before a function declaration would be parsed as an annotation, and `@bar(...)` inside a function would be parsed as a silenced function call. This context dependent meaning is confusing.
 
 
-
 ### Not being compatible with the PHP release schedule
 
 PHP doesn't not strictly follow semver, but the project does attempt to minimise semver violations.
@@ -170,6 +157,15 @@ The Imagick extension is a relatively thin wrapper around the ImageMagick librar
 
 The version numbers for ImageMagick look like "7.0.10-3", which is "major.minor.bugfix-patch_number". However there are sometimes BC breaks in minor versions, and also BC breaks between patch versions. Trying to handle these changes in a way that is compatible with PHP's release schedule would be a very complicated thing to do.
 
+### Newer features deserve less preserving than old features
+
+People have a gut instinct that the justification for removing something from PHP needs to be proportional to the length of time something has been around.
+
+For example, a new experimental feature that is introduced in one version of PHP, can be completely changed in the next version, without too much drama.
+
+A feature that has been present in PHP for years, or decades, is likely to cause more drama when people propose changing or removing it.
+
+That doesn't mean it can't happen, just that the justification for the change needs to be stronger.
 
 ## Things people will consider as reasons to vote for an RFC
 
@@ -232,3 +228,5 @@ The RFC [Union types v2](https://wiki.php.net/rfc/union_types_v2) in 2019 passed
 I believe a large part of the change in attitude was that people had grown more used to working with scalar types, and using static analysis tools like PHPStan, Psalm and Phan. That experience made it easier for people to understand that union types solved a problem in a good way.
 
 Being able to understand how other people think greatly increases the chances that you can have a productive conversation with them, and so greatly increases the chances we can continually improve the language.
+
+
