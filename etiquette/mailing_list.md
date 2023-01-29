@@ -125,8 +125,10 @@ When you remove individual words or sentences from the middle of quoted text, in
 
 #### Example removing words from the middle of a paragraph:
 
+```
 John wrote:
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. [...] In hac habitasse platea dictumst.
+```
 
 #### Example removing whole sentences/paragraphs from a quoted block.
 
@@ -172,9 +174,11 @@ In Gmail, this can be done by creating a filter that skips the inbox.
 
 ### It's natural for some discussions to not end in consensus
 
-a.k.a. you can't always 'prove' someone wrong.
+a.k.a. you can't always 'prove' someone wrong. 
 
-People base their decisions on multiple things including their own experiences and understandings of trade-offs.
+People base their decisions on multiple things including their own experiences and understandings of trade-offs. Trying to force a conversation to reach a conclusion by asking things like "What would need to be changed to make you support this RFC?", does not often get the conversation to the conclusion.
+
+Sometimes, people will just not like an RFC and not be able to express why they don't like it.
 
 
 
