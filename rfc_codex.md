@@ -68,6 +68,8 @@ PHP is actually getting better. These are all things that used to be pipe-dreams
 
 Null short-circuiting - https://wiki.php.net/rfc/nullsafe_operator
 
+[Null type](https://github.com/Danack/RfcCodex/blob/master/null_type.md)
+
 [Referencing functions](https://github.com/Danack/RfcCodex/blob/master/referencing_functions.md) - implemented by [First-class callable syntax](https://wiki.php.net/rfc/first_class_callable_syntax)
 
 [Ternary right associative](https://github.com/Danack/RfcCodex/blob/master/ternary_operator_right_associative.md)
