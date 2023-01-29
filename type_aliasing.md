@@ -38,8 +38,7 @@ function add(number $x1, number $x2): number {}
 
 ### Implementation needed
 
-That's the only hurdle I can think of. It seems like a straitforward reasonble idea.
-
+That's the main hurdle I can think of. It seems like a straitforward reasonble idea.
 
 ### People will want typed arrays
 
@@ -55,7 +54,9 @@ foo([4, "hello"]);
 
 ```
 
-Which might be more problematic.
+Which might be more problematic as PHP doesn't currently support typed arrays.
+
+
 
 
 
