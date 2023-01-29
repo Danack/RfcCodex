@@ -17,6 +17,8 @@ However it is not currently possible to create a closure to a class instance met
 
 ### Distaste
 
+It would be possible to 'just' allow the same syntax for static methods as instance methods, except the callable generated would have a parameter typed to the object type at the start, and the dispatch to the method happens internally:
+
 ```
 class Foo {
     function bar(string $name): string {
@@ -26,11 +28,12 @@ class Foo {
 
 $fn = Foo::bar(...);
 
-
+// $fn is equivalent to:
 $fn = fn (Foo $foo, string $name): string => $foo->bar($name);
 
-$fn("John");
 ```
+
+This seems to meet all of the required goals, except that it is novel and not immediately asthetically pleasing.
 
 ## Forecast
 
