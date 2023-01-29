@@ -118,6 +118,8 @@ It's quite hard to make an argument for something to be added to the engine, whe
 
 Quite unlikely to happen, unless someone can find a strong justification for adding it to the language.
 
+I would actually like it to be added, as static class initialization can be a useful paradigm for programming. But it's hard to imagine how it would work in PHP, where the whole application isn't completely compiled before being run.
+
 ## Notes
 
 Previous [static class constructor RFC](https://wiki.php.net/rfc/static_class_constructor)
