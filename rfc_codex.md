@@ -8,13 +8,19 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Array key casting](https://github.com/Danack/RfcCodex/blob/master/array_key_casting.md)
 
+[Auto-capture closure aka multi-line blocks](https://github.com/Danack/RfcCodex/blob/master/auto_capture_closure.md)
+
 [Better web sapi](https://github.com/Danack/RfcCodex/blob/master/better_web_sapi.md)
 
 [Call site error or exception control](https://github.com/Danack/RfcCodex/blob/master/call_site_error_exception_control.md)
 
+[Chained comparison operators](https://github.com/Danack/RfcCodex/blob/master/chained_comparison_operators.md)
+
+[Class method callable](https://github.com/Danack/RfcCodex/blob/master/class_method_callable.md)
+
 [Class scoping improvements](https://github.com/Danack/RfcCodex/blob/master/class_scoping_improvements.md)
 
-[Chained comparison operators](https://github.com/Danack/RfcCodex/blob/master/chained_comparison_operators.md)
+[Closure self-reference](https://github.com/Danack/RfcCodex/blob/master/closure_self_reference.md)
 
 [Generics](https://github.com/Danack/RfcCodex/blob/master/generics.md)
 
@@ -40,16 +46,16 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Type aliasing](https://github.com/Danack/RfcCodex/blob/master/type_aliasing.md)
 
+[Tuple return declarations](https://github.com/Danack/RfcCodex/blob/master/tuple_returns.md). Hmm I wrote this one up twice as [multiple return type](multiple_return_type.md)
+
 [Type callable signatures](https://github.com/Danack/RfcCodex/blob/master/typedef_callables.md)
 
 ## TODO
 
 These need to be summarised.
 
-
-
-Tuple returns - though these would be moot if we had [out parameters](https://github.com/Danack/RfcCodex/blob/master/out_parameters.md).
-
+packages.md
+partial_function_application.md
 
 ## Ideas that overcame their challenges
 

@@ -61,10 +61,7 @@ function strpos_multiple_return(string $haystack, string $needle): array
 }
 ```
 
-It might be nicer to be able to write it as a mutliple return type without the docblock
-
-
-
+It might be nicer to be able to write it as a multiple return type without the docblock
 
 ```
 function strpos_multiple_return(string $haystack, string $needle): array{0: false, 1: null}|array{0: true, 1: int}
