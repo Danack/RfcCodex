@@ -8,7 +8,7 @@ The feature of [template literals](https://developer.mozilla.org/en-US/docs/Web/
 
 The TL:DR of template literals is that they provide an easy way of separating strings written by a programmer from values.
 
-Imagine that PHP supported template literals through the syntax "$\`template goes here\`", then the following code:
+Imagine that PHP supported template literals through the syntax of three backticks "```template goes here```", then the following code:
 
 ```
 function foo(TemplateLiteral $tl) {
@@ -24,7 +24,7 @@ function foo(TemplateLiteral $tl) {
 $person = 'John';
 $age = 42;
 
-foo($`That $person is a $age.`);
+foo(```That $person is age $age.```);
 
 ```
 
@@ -36,7 +36,7 @@ array(3) {
   [0]=>
   string(5) "That "
   [1]=>
-  string(6) " is a "
+  string(6) " is age "
   [2]=>
   string(1) "."
 }
@@ -56,7 +56,7 @@ i.e. all of the literal strings are available, and all of the values of the vari
 The improvement over is_literal is that it would allow users to write things like DB queries in a very natural way, e.g.:
 
 ```
-$db->query($`select * from foo where user_id = $_SESSION['user_id'] and topic like $_REQUEST['search']`)
+$db->query(```select * from foo where user_id = $_SESSION['user_id'] and topic like $_REQUEST['search']```);
 ```
 
 Without having to jump through the hoops of using a special query builder to ensure the parameters are handled correctly.
@@ -64,8 +64,6 @@ Without having to jump through the hoops of using a special query builder to ens
 The exact details of the syntax who probably depend on parser and other technical limitations.
 
 ## Heredoc + string limitations on calling functions
-
-
 
 
 It is possible to use variables inside a string:
@@ -152,7 +150,7 @@ TEXT;
 // Output is 'Hello there Danack!'
 ```
 
-Which is an ungreat limitation. If PHP is getting a new way of doing template strings, then fixing this limitation would be good. 
+Which is an 'ungreat' limitation. If PHP is getting a new way of doing template strings, then fixing this limitation would be good. 
 
 
 ## Hurdles to overcome
@@ -162,6 +160,17 @@ Which is an ungreat limitation. If PHP is getting a new way of doing template st
 Currently, backticks as used in JavaScript are used as the [execution operator in PHP](https://www.php.net/manual/en/language.operators.execution.php).
 
 Although using the same syntax as JavaScript would be nice, not clashing with the current usage is probably a priority.
+
+Triple backticks seem to be an available option, and would allow a Markdown style of indicating what the type of text was
+```
+$name = 'John';
+```html
+
+<p>Hello there ${name}, I am clearly some HTML. </p>
+
+`​``  
+```
+
 
 
 ## Forecast

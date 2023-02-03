@@ -33,14 +33,42 @@ $fn = fn (Foo $foo, string $name): string => $foo->bar($name);
 
 ```
 
-This seems to meet all of the required goals, except that it is novel and not immediately asthetically pleasing.
+This seems to meet all of the required goals, except that it is novel and not immediately aesthetically pleasing.
 
 ## Forecast
 
-It's one of the missing pieces in the language.
+It's one of the tiny but important missing pieces in the language. Particularly for things like routers, you want to be able to specify instance methods of a class as a thing, without having to resort to string based programming.
 
 ## Notes
 
 Java uses the same syntax as I'm currently suggesting.
 
-https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html
+Hard to read documentation [here](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html).
+
+Easier to read [blog post](https://www.baeldung.com/java-method-references).
+
+
+Given this code:
+```java
+class Integer {
+    ...
+    public int compareTo(Integer anotherInteger) {...}
+}
+
+List<Integer> numbers = Arrays.asList(5, 3, 50, 24, 40, 2, 9, 18);
+
+```
+Then you can use a "Reference to an instance method of an arbitrary object of a particular type" 
+```java
+numbers.stream()
+.sorted(Integer::compareTo);
+```
+
+Is equivalent to creating a lambda:
+
+```java
+numbers.stream()
+  .sorted((a, b) -> a.compareTo(b));
+```
+
+i.e. the instance needs to be the first parameter.
