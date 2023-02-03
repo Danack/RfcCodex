@@ -161,16 +161,19 @@ Currently, backticks as used in JavaScript are used as the [execution operator i
 
 Although using the same syntax as JavaScript would be nice, not clashing with the current usage is probably a priority.
 
-Triple backticks seem to be an available option, and would allow a Markdown style of indicating what the type of text was
+Triple backticks seem to be an available option, and would allow a Markdown style of indicating what the type of text was:
+
 ```
 $name = 'John';
-```html
+$greeting = ```html
 
-<p>Hello there ${name}, I am clearly some HTML. </p>
+<p>Hello there {$name}, I am clearly some HTML. </p>
 
 `​``  
-```
 
+echo $greeting;
+
+```
 
 
 ## Forecast

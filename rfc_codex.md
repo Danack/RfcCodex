@@ -22,6 +22,8 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Out parameters](https://github.com/Danack/RfcCodex/blob/master/out_parameters.md)
 
+[Pipe operator](https://github.com/Danack/RfcCodex/blob/master/pipe_operator.md)
+
 [Standardise core library](https://github.com/Danack/RfcCodex/blob/master/standardise_core_library.md)
 
 [Strict mode and internal engine callbacks](https://github.com/Danack/RfcCodex/blob/master/engine_strict_mode_interaction.md)
@@ -44,11 +46,10 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 These need to be summarised.
 
-Pipe-operator - https://wiki.php.net/rfc/pipe-operator
+
 
 Tuple returns - though these would be moot if we had [out parameters](https://github.com/Danack/RfcCodex/blob/master/out_parameters.md).
 
-Type declarations `type number = float | int;`
 
 ## Ideas that overcame their challenges
 
