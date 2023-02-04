@@ -40,7 +40,7 @@ For example the thread:
 PCRE JIT stack size limit
 ```
 
-drift to discuss security problems, and so was changed to: 
+drifted to discuss security problems, and so was changed to: 
 
 ```
 CRE jit security hole (was: PCRE JIT stack size limit)

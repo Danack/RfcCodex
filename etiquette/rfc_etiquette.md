@@ -8,17 +8,30 @@ The site wiki.php.net/rfc is a tool that is meant to allow people to draft RFCs 
 
 Having someone other than the RFC author announce the RFC on internals before the author thinks the RFC is ready for comment, is "not okay". If you discuss an RFC on internals before the author thinks the RFC is ready to be discussed, the only thing that could achieve is to make the conversation less productive.
 
-If you want to influence how the RFC is drafted, it is appropriate to reach out to the RFC author, and offer to help them. 
+If you want to influence how the RFC is drafted, it is appropriate to reach out to the RFC author, and offer to help them.
 
-## Do open new RFCs rather than re-use existing documents.
+## Open new RFCs rather than re-use existing documents
 
-When revisiting ideas, and the previous version of an RFC hasn't been discussed in a long time (e.g. more than 6 months) or when a previous version was declined by vote, it is preferable to open new documents on the wiki, rather than re-use existing documents.
+In general the status of an RFC should not be moved backwards to an earlier status. In practice there will be times when people accidentally open the voting too early, or some serious problem is found with an RFC during the voting phase, in those cases it's fine to move the status back until the problem is fixed. But as a rule, leaving each RFC document with a clear history of what happened to that RFC makes it easier to understand past discussions.
 
-We have rules in place about when RFCs are allowed to be put into voting. If a RFC document has been re-used there could be some confusion about when it is allowed to be put to a vote.
+Also, we have rules about when RFCs are allowed to be put into voting. If a RFC document has been re-used there could be some confusion about when it is allowed to be put to a vote.
 
-Additionally, leaving the previous RFC document intact, with the results of a vote if one was taken, leaves a clearer document trail than if the document has been recycled. 
+Leaving the previous RFC document intact, with the results of a vote if one was taken, leaves a clearer document trail than if the document has been recycled. 
 
-To put it another way - in general the status of an RFC should not be moved backwards to an earlier status. In practice there will be times when people accidentally open the voting too early, or some serious problem is found with an RFC during the voting phase, in which cases it's fine to move the status back until the problem is fixed. But in general leaving each RFC document with a clear history of what happened to that RFC makes it easier to understand past discussions.
+It can also be useful to create a new RFC document when an RFC changes significantly during it's discussion. Although previous versions of documents are available through the wiki, finding where an RFC was re-written and trying to understand why it was, are quite difficult. Leaving the previous version intact, with a note pointing to the new version makes understanding discussion history much easier.
+
+## RFCs 'belong' to a single author
+
+Although minor typos can be fixed by other people, any significant changes should be approved by the original RFC author.
+
+If you wish to 'take over' an RFC, you need the express consent of the RFC author. If you can't get that consent, for example the person doesn't respond, then please open a new RFC document.
+
+
+## Don't list someone as an author without their express consent
+
+There have been cases where someone has added someone's name as an author of an RFC, and this has caused drama as the person wasn't aware that they had been added.
+
+If you want to credit someone for having done a large amount of work, e.g. when taking over an abandoned RFC, you can do that by adding the phrase 'based on work by' e.g. "Author: Danack, based on work Anthony Ferrara". Though people are free to ask for their name to be removed even in that case.
 
 
 ## Don't volunteer other people for huge amounts of work
@@ -133,4 +146,3 @@ If you want to influence how people are going to vote, these things are appropri
 * Asking in a public communication channel asking someone in a neutral way 'are you going to vote?'.
 
 Private communications trying to change people's minds are a burden that make people receiving them feel bad, even if they are intentioned to help the project.
-
