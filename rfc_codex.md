@@ -44,9 +44,9 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Throws declarations](https://github.com/Danack/RfcCodex/blob/master/throws_declaration.md)
 
-[Type aliasing](https://github.com/Danack/RfcCodex/blob/master/type_aliasing.md)
-
 [Tuple return declarations](https://github.com/Danack/RfcCodex/blob/master/tuple_returns.md). Hmm I wrote this one up twice as [multiple return type](multiple_return_type.md)
+
+[Type aliasing](https://github.com/Danack/RfcCodex/blob/master/type_aliasing.md)
 
 [Type callable signatures](https://github.com/Danack/RfcCodex/blob/master/typedef_callables.md)
 
@@ -97,7 +97,7 @@ PHP is actually getting better, but that means that some solutions to problems h
 
 ## Contributing
 
-Please read the [contributing](https://github.com/Danack/RfcCodex/blob/master/CONTRIBUTING.md) guidelines before writing your 4,000 word novelella on why some RFC really should pass.
+Please read the [contributing](https://github.com/Danack/RfcCodex/blob/master/CONTRIBUTING.md) guidelines before writing your 4,000 word novella on why some RFC really should pass.
 
 ## Disclaimer
 

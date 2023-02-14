@@ -42,7 +42,13 @@ PHP 9
 
 ## Notes
 
+### Previous RFC
+
 A [previous RFC failed](https://wiki.php.net/rfc/functional-interfaces), due more to implementation details rather than the idea being rejected imo.
 
-* Normally, I object to the word 'hint' as for most of the PHP type system, they are not hints but are checked properly at run-time. But callable can't be type-checked for the signature, and so
+* Normally, I object to the word 'hint' as for most of the PHP type system, they are not hints but are checked properly at run-time. But callable can't be type-checked for the signature, and so 'hint' is probably appropriate.
 
+### Random words for RFC draft
+
+[typedef_callables.md](https://github.com/Danack/RfcCodex/blob/master/typedef_callables.md)
+[1_callable_type_rfc.md](https://github.com/Danack/FunctionTypes/blob/master/1_callable_type_rfc.md)

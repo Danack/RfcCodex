@@ -1,6 +1,6 @@
 # Mailing list etiquette guidelines
 
-The [official mailinglist rules](https://github.com/php/php-src/blob/master/docs/mailinglist-rules.md) provide a set of rules that should be followed. This document goes into a bit more detail for some of those rules, and a few subtleties.
+The [official mailing list rules](https://github.com/php/php-src/blob/master/docs/mailinglist-rules.md) provide a set of rules that should be followed. This document goes into a bit more detail for some of those rules, and a few subtleties.
 
 The PHP mailing lists are one of the tools used for communication in the PHP project.
 
