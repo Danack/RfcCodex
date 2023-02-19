@@ -116,7 +116,11 @@ Likely to happen when one day, when one of the core developers gets bored enough
 
 Nikita Popov made some [detailed notes on his analysis](https://github.com/PHPGenerics/php-generics-rfc/issues/45) of trying to implement it.
 
-If people are really desperate for generics, then they should look at using [https://preprocess.io/](https://preprocess.io/) to start using generics through that, rather than waiting for them in PHP.
+Nikita Popov also made a detailed [answer here](https://en.reddit.com/r/PHP/comments/j65968/ama_with_the_phpstorm_team_from_jetbrains_on/g83skiz/?context=3).
+
+
+If people are really desperate for generics, then they should look at using https://preprocess.io/ to start using generics through that, rather than waiting for them in PHP. *Edit* site is dead, [code is here](https://github.com/preprocess/pre-plugin), website source is [here](https://github.com/preprocess/preprocess.io).
+
 
 ### Usage as a solution to overloading methods.
 
