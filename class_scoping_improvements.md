@@ -58,6 +58,17 @@ I suspect it just is never going to be high up enough on anyone's list of things
 
 ## Notes
 
+### Solution using static analysis
+
+DaveLiddament has a [PHP Language Extensions](https://github.com/DaveLiddament/php-language-extensions) library:
+
+> This library provides attributes that are used by static analysers to enforce new language features. The intention, at least initially, is that these extra language features are enforced by static analysis tools (such as Psalm, PHPStan and, ideally, PhpStorm) and NOT at runtime.
+
+In particular, it supports a [#[Friend] attribute for classes](https://github.com/DaveLiddament/php-language-extensions#friend).
+
+
+### Previous RFC
+
 The idea of importing C++ style 'friendship' declarations was rejected quite decisively: https://wiki.php.net/rfc/friend-classes
 
 It looks like there may be another draft: https://wiki.php.net/rfc/namespace-visibility
