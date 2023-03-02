@@ -8,7 +8,7 @@ The feature of [template literals](https://developer.mozilla.org/en-US/docs/Web/
 
 The TL:DR of template literals is that they provide an easy way of separating strings written by a programmer from values.
 
-Imagine that PHP supported template literals through the syntax of three backticks "```template goes here```", then the following code:
+Imagine that PHP supported template literals through the syntax of three backticks "`​``template goes here`​``", then the following code:
 
 ```
 function foo(TemplateLiteral $tl) {
@@ -24,7 +24,7 @@ function foo(TemplateLiteral $tl) {
 $person = 'John';
 $age = 42;
 
-foo(```That $person is age $age.```);
+foo(```That {$person} is age {$age}.```);
 
 ```
 
@@ -56,7 +56,7 @@ i.e. all of the literal strings are available, and all of the values of the vari
 The improvement over is_literal is that it would allow users to write things like DB queries in a very natural way, e.g.:
 
 ```
-$db->query(```select * from foo where user_id = $_SESSION['user_id'] and topic like $_REQUEST['search']```);
+$db->query(```select * from foo where user_id = {$_SESSION['user_id']} and topic like {$_REQUEST['search']}```);
 ```
 
 Without having to jump through the hoops of using a special query builder to ensure the parameters are handled correctly.
