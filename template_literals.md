@@ -182,10 +182,39 @@ Probably a good idea, that will happen when someone has time, energy and inclina
 
 ## Notes
 
+### Why string template literals are superior to literal string for security hole preventation
+
+Imagine you have some insecure code like:
+
+```
+$sql = "
+  select * from foo
+  where user_id = {$_SESSION['user_id']} and
+  topic like {$_REQUEST['search']}
+";
+```
+
+to convert that to secure code, using statements and bound parameters would take a non-trivial amount of work.
+
+Converting to use a string template literal like:
+
+
+```
+$sql = `​``
+  select * from foo
+  where user_id = {$_SESSION['user_id']} and
+  topic like {$_REQUEST['search']}
+`​``;
+```
+
+takes mere seconds.
+
+### JS implementation
+
 The JavaScript implementation also gives access to the 'raw' string:
 
 > The special raw property, available on the first argument to
 > the tag function, allows you to access the raw strings as they
 > were entered, without processing escape sequences.
 
-The utility of which needs to be understood.
+This is to avoid [Leaning toothpick syndrome](https://en.wikipedia.org/wiki/Leaning_toothpick_syndrome), which is the phenomenon that happens when you embed a string that needs to contain a slash into a string that is escaped by a slash character.

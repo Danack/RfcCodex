@@ -60,6 +60,12 @@ variables are permitted");
 }
 ```
 
+#### Remove ticks
+
+There was a [proposal](https://externals.io/message/114368) to remove the ['ticks'](https://wiki.php.net/rfc/deprecate_ticks)
+
+It was dropped as it was a BC break for not much gain. It would be acceptable which switching PHP 'flavours' not so much inside a single PHP system. 
+
 ### Request field mangling
 
 For reasons, post fields are mangled in PHP.
@@ -147,6 +153,9 @@ Currently in PHP-FPM, there are scenarios where an extension fails to be loaded 
 ### Don't tie to SPL.
 
 It looks like SPL, Date, Session etc. are coupled with the Standard - I'd love to loose those dependencies and have a naked interpreter able to interpret the language and provide a replacement for Standard build around vendor SDK like for eg. the SDK for ESP microchips.
+
+
+
 
 
 ### Other ini settings
