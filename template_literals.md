@@ -8,7 +8,7 @@ The feature of [template literals](https://developer.mozilla.org/en-US/docs/Web/
 
 The TL:DR of template literals is that they provide an easy way of separating strings written by a programmer from values.
 
-Imagine that PHP supported template literals through the syntax of three backticks "`​``template goes here`​``", then the following code:
+Imagine that PHP supported template literals through the syntax of three backticks \`​\`\`template goes here\`​\`\`, then the following code:
 
 ```
 function foo(TemplateLiteral $tl) {
@@ -175,6 +175,7 @@ echo $greeting;
 
 ```
 
+though the 'tagged template literal' might also be worth stealing from JS.
 
 ## Forecast
 
