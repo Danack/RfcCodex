@@ -54,6 +54,15 @@ It's okay for an RFC to deliberately leave stuff for future expansion out of the
 
 For example, for the [Write-Once Properties](https://wiki.php.net/rfc/write_once_properties) RFC, at least some of the no votes were because it did not address object cloning, which is a vital consideration when dealing with immutable objects.
 
+### 'Yes is forever, no is temporary'
+
+Voting yes means dealing with the hassle of a BC in break in future if the proposal needs fixing, or having to live with an unfortunate design. 
+
+Voting no merely means that the feature is going to be delayed.
+
+Even if an RFC is _probably_ a good idea, if the conversation about it hasn't properly explored the problem space (e.g. it's been a dumpster fire of a conversation, with more heat than light) then people can be reticent about voting yes.
+
+For people who have been using PHP for over a decade, a year may seem like a short time. For people new to PHP, it might seem a long time.
 
 ### Not being aware of PHP's idiosyncrasies
 
