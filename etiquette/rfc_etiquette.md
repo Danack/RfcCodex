@@ -4,7 +4,7 @@ There are some behaviours that I see people do when discussing RFCs, and other s
 
 ## Don't publicise other people's draft work
 
-The site wiki.php.net/rfc is a tool that is meant to allow people to draft RFCs and share the idea with other people who want to work on the RFC before it is a polished idea, and before it is ready to be presented to the world.
+The site [wiki.php.net/rfc](http://wiki.php.net/rfc) is a tool that is meant to allow people to draft RFCs and share the idea with other people who want to work on the RFC before it is a polished idea, and before it is ready to be presented to the world.
 
 Having someone other than the RFC author announce the RFC on internals before the author thinks the RFC is ready for comment, is "not okay". If you discuss an RFC on internals before the author thinks the RFC is ready to be discussed, the only thing that could achieve is to make the conversation less productive.
 
@@ -32,7 +32,6 @@ If you wish to 'take over' an RFC, you need the express consent of the RFC autho
 There have been cases where someone has added someone's name as an author of an RFC, and this has caused drama as the person wasn't aware that they had been added.
 
 If you want to credit someone for having done a large amount of work, e.g. when taking over an abandoned RFC, you can do that by adding the phrase 'based on work by' e.g. "Author: Danack, based on work Anthony Ferrara". Though people are free to ask for their name to be removed even in that case.
-
 
 ## Don't volunteer other people for huge amounts of work
 
@@ -118,7 +117,6 @@ It isn't the responsibility of voters to explain why they're voting no.
 ## Don't shout down other people
 
 Even if you don't like an RFC being discussed, it is more appropriate to ignore that thread, rather than asking people in the thread to stop talking about an idea you don't like.
-
 
 # Contacting RFC authors should go through PHP internals list
 
