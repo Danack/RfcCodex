@@ -23,11 +23,20 @@ In other projects, that don't have a fixed release schedule or such a large user
 
 ## Identify arguments about aesthetics and avoid them
 
-A lot of energy is spent in programming arguing about small design decisions. A lot of the time programmers will argue a particular choice is 'better', but are unable to say for exactly what reason it is better. 
+A lot of energy is spent in programming arguing about small design decisions. A lot of the time programmers will argue a particular choice is 'better', but are unable to say for exactly what reason it is better.  
 
-At least some of the time, they will actually be having a negative gut reaction to a choice, but aren't able to recognise that they are doing that.
+At least some of the time, they will actually be having either a positive or negative gut reaction to a design choice, but aren't able to recognise that they are doing that.
 
 Instead they will argue that a different API/syntax is more naturally 'elegant', 'intuitive', or other positive attribute. These types of arguments very often boil down to "I prefer this choice because it matches my experience". Other times it comes down to, "I prefer this choice because the other one is too boring".
+
+## Identify neophytes and educate them
+
+Sometimes neophytes[^neophytes] will learn some stuff, and proclaim it as the One True Way and go round the internet trying to pick fights with anyone who would dare to disagree.
+
+Although, you can use them as an entertaining punching bag by showing how naïve they are, that isn't really a productive conversation. I mean it can be fun stress relief...but it doesn't have a useful outcome, and may result in them becoming annoyed.
+
+Instead of that, actually taking the time to comprehend what the neophyte has just learned about (and so is excited about), and pointing out where either the limitations of it, or how they might be excited about it now, but there is still more to learn, is likely to be a more productive conversation long term.
+
 
 Some good rules to follow are:
 
@@ -95,3 +104,5 @@ Obviously, this doesn't apply to people who are a ['Known Idiot'](). When someon
 If there is any utility in their words, it is likely someone else will repeat it in a more intelligible phrase.
 
 [^smoother_bc_breaks]: Although I agree with most of the BC breaks in PHP core, I think some of them could have been done a lot more smoothly, to make life easier for end-users. See the 'Clear upgrade path] in [RFC Attitudes](etiquette/rfc_attitudes.md) for examples.
+
+[^neophyte]: A programmer who is more experienced than a noob, but not that much more. They have a tendency to think they are more experienced than they actually are. 
