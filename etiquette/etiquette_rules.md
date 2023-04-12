@@ -18,13 +18,14 @@ This is incredibly tedious.
 
 It would be okay if they were actually going and starting the work on that idea.....but they don't. They just sit there pooh-poohing away, and expect other people to see the brilliance of their own insights...
 
-
 ### Your gut instincts/aesthetics might be wrong
+
+
+
 
 ### Discussing draft work before it's published
 
 The site [wiki.php.net/rfc](http://wiki.php.net/rfc) is a tool that is meant to allow people to draft RFCs and share the idea with other people who want to work on the RFC before it is a polished idea, and before it is ready to be presented to the world.
-
 
 ### Getting involved in conversations you don't understand
 
