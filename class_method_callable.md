@@ -16,7 +16,7 @@ This means programmers need to write small anonymous functions to call the insta
 ```php
 class Verification
 {
-public function __construct(private string $id) {}
+    public function __construct(private string $id) {}
 
     public function getId(): string
     {
