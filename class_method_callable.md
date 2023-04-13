@@ -11,9 +11,41 @@ This is useful as:
 
 However it is not currently possible to create a closure to a class instance method, without also providing an instance.
 
+This means programmers need to write small anonymous functions to call the instance method.
+
+```php
+class Verification
+{
+public function __construct(private string $id) {}
+
+    public function getId(): string
+    {
+        return $this->id;
+    }
+}
+
+$items = [new Verification('1-2-3-4')];
+
+// If we copied the Java way of doing it, this:
+// $fn = Verification::getId(...);
+
+// $fn would be equivalent to:
+$fn = static fn (Verification $v) => $v->getId();
+
+$ids = array_map($fn, $items);
+
+var_dump($ids);
+
+// Output is:
+// array(1) {
+//     [0]=>
+// string(7) "1-2-3-4"
+// }
+
+```
+
 
 ## Hurdles to overcome
-
 
 ### Distaste
 
@@ -41,12 +73,13 @@ It's one of the tiny but important missing pieces in the language. Particularly 
 
 ## Notes
 
+### Java uses the same syntax
+
 Java uses the same syntax as I'm currently suggesting.
 
 Hard to read documentation [here](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html).
 
 Easier to read [blog post](https://www.baeldung.com/java-method-references).
-
 
 Given this code:
 ```java
@@ -72,3 +105,10 @@ numbers.stream()
 ```
 
 i.e. the instance needs to be the first parameter.
+
+
+
+### Previously on internals
+
+https://externals.io/message/119392
+https://externals.io/message/120011
