@@ -33,14 +33,20 @@ function foo($input, out ValidationException $exceptionOutParameter): ?int {
     // normal code flow.
     $exceptionOutParameter = $error;
 }  
+```
 
-Calling that code with an explicit out parameter passed in does not result in an exception
+Calling that code with an explicit out parameter passed in does not result in an exception:
 
 ```php
 $value = foo('someinvaliddata', $validationError);
-
-
 ```
+
+Calling that code without an explicit out parameter passed in, results in an exception :
+
+```php
+$value = foo('someinvaliddata');
+```
+
 
 ## Hurdles to overcome
 
