@@ -40,7 +40,6 @@ class A {}
 }
 
 class B delegate A {
-
     function __construct(private A $a) {}
 }
 
@@ -48,16 +47,15 @@ $b = new B();
 $b->foo();
 ```
 
-without having to do:
+without having to wire up a pass through function:
 
 ```php
 class B {
     function __construct(private A $a) {}
-}
 
-	function foo() {
-		$this->a->foo();
-	}
+    function foo() {
+        $this->a->foo();
+    }
 }
 ```
 
@@ -94,7 +92,7 @@ This is safe, as B follows the contract of A, and through the magic of co/contra
 
 Enums have contracts on their cases, not methods:
 
-```
+```php
 enum ErrorCode {
     case SOMETHING_BROKE;
 }
