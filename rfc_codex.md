@@ -26,6 +26,8 @@ The purpose of these documents is to avoid information from being lost and to tr
 
 [Method overloading](https://github.com/Danack/RfcCodex/blob/master/method_overloading.md)
 
+[Non-extending code re-use](https://github.com/Danack/RfcCodex/blob/master/non_extending_code_reuse.md)
+
 [Out parameters](https://github.com/Danack/RfcCodex/blob/master/out_parameters.md)
 
 [Pipe operator](https://github.com/Danack/RfcCodex/blob/master/pipe_operator.md)
