@@ -63,7 +63,9 @@ When someone is breaking etiquette rules, despite people having made many sugges
 * they say something a bit extreme both to try to get other people more worked up by the person's behaviour, and also as a stress release.
 * if they do that release in public, to the person, it makes resolving the conflict even harder.
 
-The problem with this pattern are these: * it allows people who are more sensitive to 
+The problem with this pattern are these:
+
+* it allows people who are more sensitive to 
 
 TODO
 TODO

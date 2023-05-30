@@ -33,6 +33,26 @@ function add(number $x1, number $x2): number {}
 ```
 
 
+### The full power of types 
+
+Although the number example above is useful, it is somewhat simple and may not give a compelling case.
+
+A more advanced example 
+
+```php
+
+type foo_result = [int $value, null $error] | [null $result, ValidationError $error];
+
+function foo(): foo_result {...}
+
+[$result, $error] = foo();
+
+if ($error) {
+    // 
+}
+```
+
+
 ## Hurdles to overcome
 
 

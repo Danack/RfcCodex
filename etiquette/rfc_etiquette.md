@@ -47,7 +47,6 @@ It's okay for RFCs to be small in scope, so long as they are self-contained.
 
 It would only be appropriate to say that the RFC needs to be bigger if it would otherwise leave new inconsistencies in the language that would need to be resolved before the next release.
 
-
 ## Do try to talk about the problem before talking about possible solutions
 
 Some RFCs don't make it clear what problem it is they are trying to solve before proposing a solution.
@@ -69,15 +68,13 @@ When you have someone saying "I want this feature", and your response is "I don'
 
 It's still okay to question how many people would want or actually use a feature, but just straight refusing to believe that anyone could find something useful doesn't give a productive discussion.
 
-
 ## Do try to improve RFCs
 
 Even if you disagree with an RFC, it is good to try suggest improvements to it, if you can see them, rather than just criticising the RFC.
 
 If the vote passes, and the RFC contains your suggested improvement - congratulations, you've helped make PHP better.
 
-If the vote doesn't pass, even though the RFC was as good as it could be, then it will be clear to anyone who might think about reopening the RFC that it needs to be dramatically improved or take another approach for it to have a chance to be passed, rather than just having a small tweak. 
-
+If the vote doesn't pass, even though the RFC was as good as it could be, then it will be clear to anyone who might think about reopening the RFC that it needs to be dramatically improved or take another approach for it to have a chance to be passed, rather than just having a small tweak.
 
 ## Don't be too put out if people don't like your RFC
 
@@ -89,8 +86,7 @@ Maybe some people haven't experienced the problem the RFC is trying to solve, an
 
 Maybe they have experienced in a different language what is being proposed for PHP, and they didn't like using it in that language, so they find it hard to see why it would be good for PHP.  
 
-Whatever the reason, when people respond with something less than overwhelming support for the idea, they aren't doing it out of malice, they're doing it because they also want PHP to be the best possible language it can be - they just disagree about what that means. 
- 
+Whatever the reason, when people respond with something less than overwhelming support for the idea, they aren't doing it out of malice, they're doing it because they also want PHP to be the best possible language it can be - they just disagree about what that means.
 
 ## Do take your time to respond to emails
 
@@ -104,7 +100,6 @@ Writing concisely will save a lot of other people's time. It is also far more li
 
 Additionally, unless someone was just discussing trivial issues (such as a typo in the RFC) it is appropriate to think about and digest what they were saying, rather than giving a response based on your first thoughts.
 
-
 ## Don't try to demand that people justify their opinions
 
 It is the role of RFC authors to convince other people that an RFC is definitely a good idea, and that people should vote yes on it.
@@ -112,7 +107,6 @@ It is the role of RFC authors to convince other people that an RFC is definitely
 People might have many reasons to vote no, e.g. not convinced the problem the RFC addresses is one that needs solving, not convinced the problem is solved in the right way, not convinced that the solution is a correct one. Some of these feelings about why a proposal doesn't deserve a 'yes' vote are hard to express.
 
 It isn't the responsibility of voters to explain why they're voting no.
-
 
 ## Don't shout down other people
 

@@ -11,7 +11,9 @@ As in, people should be asking "exactly what problem is this solving?" and then 
 
 1. the scope of the problem is reasonably well understood.
 2. most people agree that it is a problem that should be addressed.
-3. there aren't better problems to solve 
+3. there aren't better problems to solve first.
+
+Jumping to proposing a solution before discussing the problem to be solved is a _great_ way of having a heated argument, but not so good at solving actual problems.
 
 See also, the [XY problem](https://meta.stackexchange.com/questions/66377/what-is-the-xy-problem).
 
@@ -29,6 +31,12 @@ At least some of the time, they will actually be having either a positive or neg
 
 Instead they will argue that a different API/syntax is more naturally 'elegant', 'intuitive', or other positive attribute. These types of arguments very often boil down to "I prefer this choice because it matches my experience". Other times it comes down to, "I prefer this choice because the other one is too boring".
 
+Some good rules to follow are:
+
+* choose the most boring API that is acceptable. People will often object to this, wanting an API that makes them feel cleverer.
+* "the person who has thought the most about the problem, gets to choose the API". Or at least that seems to be working for PHP.
+
+
 ## Identify neophytes and educate them
 
 Sometimes neophytes[^neophytes] will learn some stuff, and proclaim it as the One True Way and go round the internet trying to pick fights with anyone who would dare to disagree.
@@ -37,11 +45,6 @@ Although, you can use them as an entertaining punching bag by showing how naïve
 
 Instead of that, actually taking the time to comprehend what the neophyte has just learned about (and so is excited about), and pointing out where either the limitations of it, or how they might be excited about it now, but there is still more to learn, is likely to be a more productive conversation long term.
 
-
-Some good rules to follow are:
-
-* choose the most boring API that is acceptable. People will often object to this, wanting an API that makes them feel cleverer.
-* "the person who has thought the most about the problem, gets to choose the API". Or at least that seems to be working for PHP.
 
 ## Don't respond to ideas you don't like the same day
 
@@ -99,9 +102,43 @@ Although some BC breaks could be done more smoothly[^smoother_bc_breaks], the va
 
 When the people who object to the BC break turn up to try to undo the BC break, they often seem to be unable to comprehend that the decision was made deliberately, with full consideration of the consequences. This leads to not particularly productive conversations, as one side is unable to even comprehend the state of mind of the other side.
 
-Obviously, this doesn't apply to people who are a ['Known Idiot'](). When someone has said stupid things frequently enough, it becomes a better to rule to completely discount their opinion rather than taking any effort to understand it.
+Obviously, this doesn't apply to people who are a ['Known Idiot'](https://www.urbandictionary.com/define.php?term=Known%20Idiot). When someone has said stupid things frequently enough, it becomes a better to rule to completely discount their opinion rather than taking any effort to understand it.
 
 If there is any utility in their words, it is likely someone else will repeat it in a more intelligible phrase.
+
+## People doing the work get a bigger say than everyone else
+
+// TODO cleanup
+
+For any group of people, for any given topic, there will be some people who provide more value when they speak.
+
+For PHP internals, the things the core contributors say are more important than random userland people who have never contributed any core code.
+
+Although it would be wonderful if everyone could have their voice heard, there is a limit on how many people can take part in a conversation before the quality of the conversation is reduced.
+
+I think #PHPinternals needs it's own version of the Bechdel test.
+
+"Does a conversation feature at least two core contributors who talk to each other about something other than a non-contributors unworkable idea?"
+
+btw, this means one goal of open source projects would be to have enough spare bandwidth for people to consider problems brought up by other people.
+
+// TODO cleanup
+
+## Universal truths vs local truths vs aesthetics
+
+You don't do programming in isolation. You do programming in a particular environment, trying to solve particular problems, possibly using a particular framework that makes some things easy to solve. 
+
+Someone else could be doing their programming in a different environment, trying to solve different problems, using a different framework, that makes other things easy to solve. 
+
+Both of you could say what you think "good" programming looks like, and you would both be saying valid things for _your_ environment and problem space.
+
+People will spend a lot of energy arguing about what "good" programming looks like, And they will all be right...but miss the fact they are arguing with people who have a different set of criteria of what "good" means.
+
+But people can argue what "good" programming looks like, even when they are programming in the same kind of environment.
+
+A lot of what "good" means will vary based on personal taste.
+
+TODO - insert Teapot + elegance here. 
 
 [^smoother_bc_breaks]: Although I agree with most of the BC breaks in PHP core, I think some of them could have been done a lot more smoothly, to make life easier for end-users. See the 'Clear upgrade path] in [RFC Attitudes](etiquette/rfc_attitudes.md) for examples.
 
